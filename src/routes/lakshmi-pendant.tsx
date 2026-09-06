@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroAsset from "@/assets/lakshmi-pendant-hero.webp.asset.json";
-import detailAsset from "@/assets/lakshmi-pendant-detail.webp.asset.json";
-import stylingAsset from "@/assets/lakshmi-pendant-styling.webp.asset.json";
+import heroAsset from "@/assets/lakshmi-pendant-hero-optimized.webp.asset.json";
+import detailAsset from "@/assets/lakshmi-pendant-detail-optimized.webp.asset.json";
+import stylingAsset from "@/assets/lakshmi-pendant-styling-optimized.webp.asset.json";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/lakshmi-pendant`;
@@ -27,7 +27,10 @@ export const Route = createFileRoute("/lakshmi-pendant")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: `${SITE}${heroImage}` },
     ],
-    links: [{ rel: "canonical", href: PAGE_URL }],
+    links: [
+      { rel: "canonical", href: PAGE_URL },
+      { rel: "preload", href: heroImage, as: "image", type: "image/webp" },
+    ],
     scripts: [
       {
         type: "application/ld+json",
@@ -151,7 +154,7 @@ function Btn({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-gold-deep">
+    <p className="mb-4 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-maroon">
       {children}
     </p>
   );
@@ -221,8 +224,8 @@ function LakshmiPendantPage() {
               <img
                 src={heroImage}
                 alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
-                width={1200}
-                height={1200}
+                width={741}
+                height={1000}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
@@ -303,8 +306,8 @@ function LakshmiPendantPage() {
               <img
                 src={detailImage}
                 alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
-                width={1400}
-                height={1130}
+                width={960}
+                height={800}
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 768px) 90vw, 520px"
@@ -377,12 +380,12 @@ function LakshmiPendantPage() {
               <img
                 src={stylingImage}
                 alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
-                width={1000}
-                height={1330}
+                width={720}
+                height={972}
                 loading="lazy"
                 decoding="async"
-                sizes="(max-width: 768px) 90vw, 480px"
-                className="h-full w-full object-contain"
+                sizes="(max-width: 768px) 68vw, 360px"
+                className="h-auto w-3/4 object-contain"
               />
             </div>
             <div>
@@ -392,7 +395,7 @@ function LakshmiPendantPage() {
                 {styling.map((s) => (
                   <article
                     key={s.title}
-                    className="flex h-full flex-col rounded-2xl border border-border bg-card p-5"
+                    className="flex h-full flex-col rounded-2xl border border-maroon/15 bg-card p-5"
                   >
                     <h3 className="font-display text-lg text-primary">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
@@ -468,7 +471,7 @@ function LakshmiPendantPage() {
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="min-w-0 rounded-2xl border border-border bg-card px-5 py-4"
+                className="min-w-0 rounded-2xl border border-maroon/15 bg-card px-5 py-4"
               >
                 <dt className="text-[0.66rem] uppercase tracking-[0.22em] text-muted-foreground">
                   {label}
