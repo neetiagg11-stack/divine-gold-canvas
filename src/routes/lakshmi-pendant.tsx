@@ -513,13 +513,13 @@ function LakshmiPendantPage() {
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <a
                 href="#craftsmanship"
-                className="inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full bg-accent px-8 text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground transition-opacity hover:opacity-90"
+                className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full bg-accent px-8 text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground transition-opacity hover:opacity-90"
               >
                 Explore the Pendant
               </a>
               <a
                 href="#trust"
-                className="inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+                className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
               >
                 Find a Store
               </a>
