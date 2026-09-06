@@ -299,14 +299,16 @@ function LakshmiPendantPage() {
                 ))}
               </ul>
             </div>
-            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card shadow-luxe">
+            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-4 shadow-luxe">
               <img
                 src={detailImage}
-                alt="Close-up of the Lakshmi-inspired detailing on the Shrivatsa Gold Pendant"
-                width={1200}
-                height={1200}
+                alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
+                width={1400}
+                height={1130}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 520px"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
