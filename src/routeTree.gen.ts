@@ -10,33 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as LakshmiPendantRouteImport } from './routes/lakshmi-pendant'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LakshmiPendantRoute = LakshmiPendantRouteImport.update({
+  id: '/lakshmi-pendant',
+  path: '/lakshmi-pendant',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/lakshmi-pendant': typeof LakshmiPendantRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/lakshmi-pendant': typeof LakshmiPendantRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/lakshmi-pendant': typeof LakshmiPendantRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/lakshmi-pendant'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/lakshmi-pendant'
+  id: '__root__' | '/' | '/lakshmi-pendant'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LakshmiPendantRoute: typeof LakshmiPendantRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +58,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/lakshmi-pendant': {
+      id: '/lakshmi-pendant'
+      path: '/lakshmi-pendant'
+      fullPath: '/lakshmi-pendant'
+      preLoaderRoute: typeof LakshmiPendantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LakshmiPendantRoute: LakshmiPendantRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
