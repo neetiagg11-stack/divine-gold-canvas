@@ -1,7 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "@/assets/lakshmi-pendant-hero.jpg";
-import detailImage from "@/assets/lakshmi-pendant-detail.jpg";
-import stylingImage from "@/assets/lakshmi-pendant-styling.jpg";
+import heroAsset from "@/assets/lakshmi-pendant-hero.webp.asset.json";
+import detailAsset from "@/assets/lakshmi-pendant-detail.webp.asset.json";
+import stylingAsset from "@/assets/lakshmi-pendant-styling.webp.asset.json";
+
+const SITE = "https://divine-gold-canvas.lovable.app";
+const PAGE_URL = `${SITE}/lakshmi-pendant`;
+const heroImage = heroAsset.url;
+const detailImage = detailAsset.url;
+const stylingImage = stylingAsset.url;
 
 const TITLE = "Lakshmi Pendant | Traditional 22K Gold Jewellery";
 const DESCRIPTION =
