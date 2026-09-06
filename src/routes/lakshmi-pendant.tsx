@@ -373,14 +373,16 @@ function LakshmiPendantPage() {
         {/* STYLE */}
         <section className="mx-auto max-w-6xl px-5 py-16 md:py-20">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card shadow-luxe">
+            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-3 shadow-luxe">
               <img
                 src={stylingImage}
-                alt="Shrivatsa Gold Lakshmi Pendant styled for traditional bridal wear"
-                width={1200}
-                height={1200}
+                alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
+                width={1000}
+                height={1330}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 480px"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
