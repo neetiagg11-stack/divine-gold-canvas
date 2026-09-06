@@ -134,7 +134,7 @@ function Btn({
   variant?: "solid" | "outline";
 }) {
   const base =
-    "inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full px-8 text-xs font-medium uppercase tracking-[0.18em] transition-colors";
+    "inline-flex h-12 w-full items-center justify-center rounded-full px-8 text-center text-xs font-medium uppercase tracking-[0.18em] transition-colors sm:w-auto sm:min-w-[11rem]";
   return (
     <a
       href={href}
