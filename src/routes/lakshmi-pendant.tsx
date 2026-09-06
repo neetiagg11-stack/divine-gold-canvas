@@ -195,18 +195,18 @@ function LakshmiPendantPage() {
               symbolism shaped in gold for bridal wear and auspicious occasions.
             </p>
 
-            <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-y border-border py-5">
-              <div>
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-border py-5 sm:flex sm:flex-wrap sm:gap-x-10">
+              <div className="min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Metal</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">22K Yellow Gold</dd>
+                <dd className="mt-1 font-display text-xl text-primary sm:text-2xl">22K Yellow Gold</dd>
               </div>
-              <div>
+              <div className="min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Gold Weight</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">14.511 g</dd>
+                <dd className="mt-1 font-display text-xl text-primary sm:text-2xl">14.511 g</dd>
               </div>
-              <div>
+              <div className="col-span-2 min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Price</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">Price available on request</dd>
+                <dd className="mt-1 font-display text-lg text-primary sm:text-2xl">Price available on request</dd>
               </div>
             </dl>
 
