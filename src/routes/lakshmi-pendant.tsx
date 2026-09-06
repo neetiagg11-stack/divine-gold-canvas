@@ -220,9 +220,13 @@ function LakshmiPendantPage() {
             <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/40 bg-secondary p-6 shadow-luxe">
               <img
                 src={heroImage}
-                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold"
+                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
                 width={1200}
                 height={1200}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 420px"
                 className="h-full w-full object-contain"
               />
             </div>
