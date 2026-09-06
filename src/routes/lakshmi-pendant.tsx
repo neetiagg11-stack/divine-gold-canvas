@@ -1,7 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "@/assets/lakshmi-pendant-hero.jpg";
-import detailImage from "@/assets/lakshmi-pendant-detail.jpg";
-import stylingImage from "@/assets/lakshmi-pendant-styling.jpg";
+import heroAsset from "@/assets/lakshmi-pendant-hero.webp.asset.json";
+import detailAsset from "@/assets/lakshmi-pendant-detail.webp.asset.json";
+import stylingAsset from "@/assets/lakshmi-pendant-styling.webp.asset.json";
+
+const SITE = "https://divine-gold-canvas.lovable.app";
+const PAGE_URL = `${SITE}/lakshmi-pendant`;
+const heroImage = heroAsset.url;
+const detailImage = detailAsset.url;
+const stylingImage = stylingAsset.url;
 
 const TITLE = "Lakshmi Pendant | Traditional 22K Gold Jewellery";
 const DESCRIPTION =
@@ -16,10 +22,12 @@ export const Route = createFileRoute("/lakshmi-pendant")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "product" },
-      { property: "og:url", content: "/lakshmi-pendant" },
+      { property: "og:url", content: PAGE_URL },
+      { property: "og:image", content: `${SITE}${heroImage}` },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE}${heroImage}` },
     ],
-    links: [{ rel: "canonical", href: "/lakshmi-pendant" }],
+    links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
       {
         type: "application/ld+json",
@@ -28,12 +36,20 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@type": "Product",
           name: "Shrivatsa Gold Lakshmi Pendant",
           category: "Pendants",
-          brand: { "@type": "Brand", name: "Indriya" },
+          url: PAGE_URL,
+          image: [`${SITE}${heroImage}`, `${SITE}${detailImage}`, `${SITE}${stylingImage}`],
+          brand: { "@type": "Brand", name: "Indriya Jewellery" },
           material: "22K Yellow Gold",
           audience: { "@type": "PeopleAudience", suggestedGender: "female" },
           description:
             "Rooted in divine symbolism, this pendant reflects the grace and prosperity of Lakshmi-inspired design with a deeply traditional essence. Crafted in 22KT yellow gold with a high-polish finish, the intricate detailing is enhanced with subtle stone accents that add richness and depth.",
           weight: { "@type": "QuantitativeValue", value: 14.511, unitCode: "GRM" },
+          additionalProperty: [
+            { "@type": "PropertyValue", name: "Type", value: "Faith & Belief" },
+            { "@type": "PropertyValue", name: "Occasion", value: "Bridal Wear" },
+            { "@type": "PropertyValue", name: "Design Theme", value: "Elevated Traditional" },
+            { "@type": "PropertyValue", name: "Gold Purity", value: "22K" },
+          ],
         }),
       },
       {
@@ -42,12 +58,13 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Pendants", item: "/lakshmi-pendant" },
+            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+            { "@type": "ListItem", position: 2, name: "Pendants", item: PAGE_URL },
             {
               "@type": "ListItem",
-              position: 2,
-              name: "Shrivatsa Gold Lakshmi Pendant",
-              item: "/lakshmi-pendant",
+              position: 3,
+              name: "Lakshmi Pendant",
+              item: PAGE_URL,
             },
           ],
         }),
@@ -117,7 +134,7 @@ function Btn({
   variant?: "solid" | "outline";
 }) {
   const base =
-    "inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full px-8 text-xs font-medium uppercase tracking-[0.18em] transition-colors";
+    "inline-flex h-12 w-full items-center justify-center rounded-full px-8 text-center text-xs font-medium uppercase tracking-[0.18em] transition-colors sm:w-auto sm:min-w-[11rem]";
   return (
     <a
       href={href}
@@ -159,13 +176,15 @@ function LakshmiPendantPage() {
         <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:grid-cols-2 md:py-20">
           <div className="order-2 md:order-1">
             <nav aria-label="Breadcrumb" className="mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              <ol className="flex gap-2">
+              <ol className="flex flex-wrap gap-2">
+                <li><a href="/" className="hover:text-primary">Home</a></li>
+                <li aria-hidden="true">/</li>
                 <li>Pendants</li>
                 <li aria-hidden="true">/</li>
                 <li className="text-gold-deep">Lakshmi Pendant</li>
               </ol>
             </nav>
-            <h1 className="font-display text-4xl leading-tight text-primary sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-[2rem] leading-tight text-primary sm:text-5xl lg:text-6xl">
               Shrivatsa Gold Lakshmi Pendant
             </h1>
             <p className="mt-4 max-w-md font-display text-xl italic text-foreground/80">
@@ -176,18 +195,18 @@ function LakshmiPendantPage() {
               symbolism shaped in gold for bridal wear and auspicious occasions.
             </p>
 
-            <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-y border-border py-5">
-              <div>
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-border py-5 sm:flex sm:flex-wrap sm:gap-x-10">
+              <div className="min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Metal</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">22K Yellow Gold</dd>
+                <dd className="mt-1 font-display text-xl text-primary sm:text-2xl">22K Yellow Gold</dd>
               </div>
-              <div>
+              <div className="min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Gold Weight</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">14.511 g</dd>
+                <dd className="mt-1 font-display text-xl text-primary sm:text-2xl">14.511 g</dd>
               </div>
-              <div>
+              <div className="col-span-2 min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Price</dt>
-                <dd className="mt-1 font-display text-2xl text-primary">Price available on request</dd>
+                <dd className="mt-1 font-display text-lg text-primary sm:text-2xl">Price available on request</dd>
               </div>
             </dl>
 
@@ -201,9 +220,13 @@ function LakshmiPendantPage() {
             <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/40 bg-secondary p-6 shadow-luxe">
               <img
                 src={heroImage}
-                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold"
+                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
                 width={1200}
                 height={1200}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 420px"
                 className="h-full w-full object-contain"
               />
             </div>
@@ -276,14 +299,16 @@ function LakshmiPendantPage() {
                 ))}
               </ul>
             </div>
-            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card shadow-luxe">
+            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-4 shadow-luxe">
               <img
                 src={detailImage}
-                alt="Close-up of the Lakshmi-inspired detailing on the Shrivatsa Gold Pendant"
-                width={1200}
-                height={1200}
+                alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
+                width={1400}
+                height={1130}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 520px"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
@@ -348,14 +373,16 @@ function LakshmiPendantPage() {
         {/* STYLE */}
         <section className="mx-auto max-w-6xl px-5 py-16 md:py-20">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card shadow-luxe">
+            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-3 shadow-luxe">
               <img
                 src={stylingImage}
-                alt="Shrivatsa Gold Lakshmi Pendant styled for traditional bridal wear"
-                width={1200}
-                height={1200}
+                alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
+                width={1000}
+                height={1330}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 480px"
+                className="h-full w-full object-contain"
               />
             </div>
             <div>
@@ -414,9 +441,48 @@ function LakshmiPendantPage() {
           <SectionLabel>Indriya</SectionLabel>
           <h2 className="font-display text-3xl text-primary sm:text-4xl">Crafted with Trust</h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
+            Every detail shared here is drawn from the pendant's own specifications —
+            nothing more, nothing less.
+          </p>
+
+          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 bg-card px-6 py-7 shadow-luxe">
+            <span className="text-gold-gradient font-display text-5xl font-semibold">22K</span>
+            <p className="mt-3 text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
+              Yellow Gold Purity
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Crafted in 22 karat yellow gold, with a stated gold weight of 14.511 g.
+            </p>
+          </div>
+
+          <dl className="mt-8 grid gap-4 text-left sm:grid-cols-2">
+            {[
+              ["Metal", "22K Yellow Gold"],
+              ["Gold Weight", "14.511 g"],
+              ["Category", "Pendant"],
+              ["Type", "Faith & Belief"],
+              ["Gender", "Women"],
+              ["Occasion", "Bridal Wear"],
+              ["Design Theme", "Elevated Traditional"],
+              ["Gemstone", "Synthetic gemstone"],
+            ].map(([label, value]) => (
+              <div
+                key={label}
+                className="min-w-0 rounded-2xl border border-border bg-card px-5 py-4"
+              >
+                <dt className="text-[0.66rem] uppercase tracking-[0.22em] text-muted-foreground">
+                  {label}
+                </dt>
+                <dd className="mt-1 text-sm text-foreground/90">{value}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
             For availability, store locations and further information on this pendant,
             connect with Indriya.
           </p>
+
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Btn href="#details">Explore Product Details</Btn>
             <Btn href="#details" variant="outline">Check Availability</Btn>
@@ -447,13 +513,13 @@ function LakshmiPendantPage() {
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <a
                 href="#craftsmanship"
-                className="inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full bg-accent px-8 text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground transition-opacity hover:opacity-90"
+                className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full bg-accent px-8 text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground transition-opacity hover:opacity-90"
               >
                 Explore the Pendant
               </a>
               <a
                 href="#trust"
-                className="inline-flex h-12 min-w-[11rem] items-center justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+                className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
               >
                 Find a Store
               </a>
