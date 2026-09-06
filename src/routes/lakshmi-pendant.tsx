@@ -22,10 +22,12 @@ export const Route = createFileRoute("/lakshmi-pendant")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "product" },
-      { property: "og:url", content: "/lakshmi-pendant" },
+      { property: "og:url", content: PAGE_URL },
+      { property: "og:image", content: `${SITE}${heroImage}` },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE}${heroImage}` },
     ],
-    links: [{ rel: "canonical", href: "/lakshmi-pendant" }],
+    links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
       {
         type: "application/ld+json",
