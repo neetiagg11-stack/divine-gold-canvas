@@ -184,7 +184,7 @@ function LakshmiPendantPage() {
                 <li className="text-gold-deep">Lakshmi Pendant</li>
               </ol>
             </nav>
-            <h1 className="font-display text-4xl leading-tight text-primary sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-[2rem] leading-tight text-primary sm:text-5xl lg:text-6xl">
               Shrivatsa Gold Lakshmi Pendant
             </h1>
             <p className="mt-4 max-w-md font-display text-xl italic text-foreground/80">
