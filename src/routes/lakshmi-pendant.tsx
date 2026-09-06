@@ -176,7 +176,9 @@ function LakshmiPendantPage() {
         <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:grid-cols-2 md:py-20">
           <div className="order-2 md:order-1">
             <nav aria-label="Breadcrumb" className="mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              <ol className="flex gap-2">
+              <ol className="flex flex-wrap gap-2">
+                <li><a href="/" className="hover:text-primary">Home</a></li>
+                <li aria-hidden="true">/</li>
                 <li>Pendants</li>
                 <li aria-hidden="true">/</li>
                 <li className="text-gold-deep">Lakshmi Pendant</li>
