@@ -441,9 +441,48 @@ function LakshmiPendantPage() {
           <SectionLabel>Indriya</SectionLabel>
           <h2 className="font-display text-3xl text-primary sm:text-4xl">Crafted with Trust</h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
+            Every detail shared here is drawn from the pendant's own specifications —
+            nothing more, nothing less.
+          </p>
+
+          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 bg-card px-6 py-7 shadow-luxe">
+            <span className="text-gold-gradient font-display text-5xl font-semibold">22K</span>
+            <p className="mt-3 text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
+              Yellow Gold Purity
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Crafted in 22 karat yellow gold, with a stated gold weight of 14.511 g.
+            </p>
+          </div>
+
+          <dl className="mt-8 grid gap-4 text-left sm:grid-cols-2">
+            {[
+              ["Metal", "22K Yellow Gold"],
+              ["Gold Weight", "14.511 g"],
+              ["Category", "Pendant"],
+              ["Type", "Faith & Belief"],
+              ["Gender", "Women"],
+              ["Occasion", "Bridal Wear"],
+              ["Design Theme", "Elevated Traditional"],
+              ["Gemstone", "Synthetic gemstone"],
+            ].map(([label, value]) => (
+              <div
+                key={label}
+                className="min-w-0 rounded-2xl border border-border bg-card px-5 py-4"
+              >
+                <dt className="text-[0.66rem] uppercase tracking-[0.22em] text-muted-foreground">
+                  {label}
+                </dt>
+                <dd className="mt-1 text-sm text-foreground/90">{value}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
             For availability, store locations and further information on this pendant,
             connect with Indriya.
           </p>
+
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Btn href="#details">Explore Product Details</Btn>
             <Btn href="#details" variant="outline">Check Availability</Btn>
