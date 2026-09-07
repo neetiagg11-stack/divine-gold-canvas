@@ -301,6 +301,14 @@ function LakshmiPendantPage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 text-sm text-muted-foreground">
+                <Link
+                  to="/traditional-jewellery"
+                  className="text-gold-deep underline underline-offset-4 hover:text-primary"
+                >
+                  Explore Traditional Jewellery
+                </Link>
+              </p>
             </div>
             <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-4 shadow-luxe">
               <img
@@ -370,6 +378,14 @@ function LakshmiPendantPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-8 text-sm text-muted-foreground">
+              <Link
+                to="/bridal-jewellery"
+                className="text-gold-deep underline underline-offset-4 hover:text-primary"
+              >
+                Discover Bridal Jewellery
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -491,17 +507,6 @@ function LakshmiPendantPage() {
             <Btn href="#details" variant="outline">Check Availability</Btn>
             <Btn href="#final-cta" variant="outline">Connect with Indriya</Btn>
           </div>
-          <nav aria-label="Related pages" className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
-            <Link to="/traditional-jewellery" className="text-gold-deep underline underline-offset-4 hover:text-primary">
-              Explore Traditional Jewellery
-            </Link>
-            <Link to="/bridal-jewellery" className="text-gold-deep underline underline-offset-4 hover:text-primary">
-              Discover Bridal Jewellery
-            </Link>
-            <Link to="/store-locator" className="text-gold-deep underline underline-offset-4 hover:text-primary">
-              Find a Store Near You
-            </Link>
-          </nav>
         </section>
 
         {/* FINAL CTA */}
@@ -520,12 +525,12 @@ function LakshmiPendantPage() {
               >
                 Explore the Pendant
               </a>
-              <a
-                href="#trust"
+              <Link
+                to="/store-locator"
                 className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
               >
                 Find a Store
-              </a>
+              </Link>
             </div>
           </div>
         </section>
