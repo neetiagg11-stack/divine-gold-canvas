@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/lakshmi-pendant-hero-optimized.webp.asset.json";
 import detailAsset from "@/assets/lakshmi-pendant-detail-optimized.webp.asset.json";
 import stylingAsset from "@/assets/lakshmi-pendant-styling-optimized.webp.asset.json";
@@ -492,15 +492,15 @@ function LakshmiPendantPage() {
             <Btn href="#final-cta" variant="outline">Connect with Indriya</Btn>
           </div>
           <nav aria-label="Related pages" className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
-            <a href="#craftsmanship" className="text-gold-deep underline underline-offset-4 hover:text-primary">
+            <Link to="/traditional-jewellery" className="text-gold-deep underline underline-offset-4 hover:text-primary">
               Explore Traditional Jewellery
-            </a>
-            <a href="#occasions" className="text-gold-deep underline underline-offset-4 hover:text-primary">
+            </Link>
+            <Link to="/bridal-jewellery" className="text-gold-deep underline underline-offset-4 hover:text-primary">
               Discover Bridal Jewellery
-            </a>
-            <a href="#final-cta" className="text-gold-deep underline underline-offset-4 hover:text-primary">
+            </Link>
+            <Link to="/store-locator" className="text-gold-deep underline underline-offset-4 hover:text-primary">
               Find a Store Near You
-            </a>
+            </Link>
           </nav>
         </section>
 
