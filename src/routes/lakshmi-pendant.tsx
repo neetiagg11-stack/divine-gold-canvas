@@ -215,7 +215,7 @@ function LakshmiPendantPage() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Btn href="#craftsmanship">Explore the Pendant</Btn>
-              <Btn href="#trust" variant="outline">Find a Store</Btn>
+              <Btn href="/store-locator" variant="outline">Find a Store</Btn>
             </div>
           </div>
 
@@ -529,7 +529,7 @@ function LakshmiPendantPage() {
                 to="/store-locator"
                 className="inline-flex h-12 w-full items-center sm:w-auto sm:min-w-[11rem] justify-center rounded-full border border-primary-foreground/50 px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary-foreground/10"
               >
-                Find a Store
+                Find a Store Near You
               </Link>
             </div>
           </div>
