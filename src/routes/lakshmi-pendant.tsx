@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroAsset from "@/assets/lakshmi-pendant-hero-optimized.webp.asset.json";
-import detailAsset from "@/assets/lakshmi-pendant-detail-optimized.webp.asset.json";
-import stylingAsset from "@/assets/lakshmi-pendant-styling-optimized.webp.asset.json";
+import heroAsset from "@/assets/lakshmi-pendant-hero-hq.webp.asset.json";
+import detailAsset from "@/assets/lakshmi-pendant-detail-hq.webp.asset.json";
+import stylingAsset from "@/assets/lakshmi-pendant-styling-hq.webp.asset.json";
 import logoAsset from "@/assets/indriya-logo.webp.asset.json";
 import pujaAsset from "@/assets/puja-ambience.webp.asset.json";
 import templeAsset from "@/assets/temple-motif.webp.asset.json";
@@ -169,7 +169,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function LakshmiPendantPage() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border/70">
+      <header className="border-b border-gold/45">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
           <a href="/" className="flex items-center gap-3">
             <img
@@ -218,7 +218,7 @@ function LakshmiPendantPage() {
               craft, made for women who wear faith close to the heart.
             </p>
 
-            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-border py-5 sm:flex sm:flex-wrap sm:gap-x-10">
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-gold/45 py-5 sm:flex sm:flex-wrap sm:gap-x-10">
               <div className="min-w-0">
                 <dt className="text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">Metal</dt>
                 <dd className="mt-1 font-display text-xl text-primary sm:text-2xl">22K Yellow Gold</dd>
@@ -240,12 +240,12 @@ function LakshmiPendantPage() {
           </div>
 
           <div className="order-1 md:order-2">
-            <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/40 bg-secondary p-6 shadow-luxe">
+            <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/60 bg-secondary p-3 shadow-luxe">
               <img
                 src={heroImage}
                 alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
-                width={741}
-                height={1000}
+                width={758}
+                height={1023}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
@@ -262,7 +262,7 @@ function LakshmiPendantPage() {
             {highlights.map((h) => (
               <article
                 key={h.title}
-                className="flex h-full flex-col rounded-2xl border border-gold/35 bg-card p-6 text-center"
+                className="flex h-full flex-col rounded-2xl border border-gold/45 bg-card p-6 text-center"
               >
                 <span
                   aria-hidden="true"
@@ -356,12 +356,12 @@ function LakshmiPendantPage() {
                 </Link>
               </p>
             </div>
-            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-4 shadow-luxe">
+            <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={detailImage}
                 alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
-                width={960}
-                height={800}
+                width={1374}
+                height={1145}
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 768px) 90vw, 520px"
@@ -458,12 +458,12 @@ function LakshmiPendantPage() {
         {/* STYLE */}
         <section className="mx-auto max-w-6xl px-5 py-16 md:py-20">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/40 bg-card p-3 shadow-luxe">
+            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={stylingImage}
                 alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
-                width={720}
-                height={972}
+                width={758}
+                height={1023}
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 768px) 68vw, 360px"
