@@ -2,12 +2,18 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/lakshmi-pendant-hero-optimized.webp.asset.json";
 import detailAsset from "@/assets/lakshmi-pendant-detail-optimized.webp.asset.json";
 import stylingAsset from "@/assets/lakshmi-pendant-styling-optimized.webp.asset.json";
+import logoAsset from "@/assets/indriya-logo.webp.asset.json";
+import pujaAsset from "@/assets/puja-ambience.webp.asset.json";
+import templeAsset from "@/assets/temple-motif.webp.asset.json";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/lakshmi-pendant`;
 const heroImage = heroAsset.url;
 const detailImage = detailAsset.url;
 const stylingImage = stylingAsset.url;
+const logoImage = logoAsset.url;
+const pujaImage = pujaAsset.url;
+const templeImage = templeAsset.url;
 
 const TITLE = "Lakshmi Pendant | Traditional 22K Gold Jewellery";
 const DESCRIPTION =
@@ -165,7 +171,18 @@ function LakshmiPendantPage() {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border/70">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-          <span className="font-display text-xl tracking-[0.35em] text-primary">INDRIYA</span>
+          <a href="/" className="flex items-center gap-3">
+            <img
+              src={logoImage}
+              alt="Indriya Jewellery logo — lotus and temple-arch brand mark in gold and maroon"
+              width={420}
+              height={210}
+              loading="eager"
+              decoding="async"
+              className="h-11 w-auto sm:h-14"
+            />
+            <span className="sr-only">Indriya Jewellery</span>
+          </a>
           <nav aria-label="Page sections" className="hidden gap-8 text-xs uppercase tracking-[0.2em] text-muted-foreground sm:flex">
             <a href="#craftsmanship" className="hover:text-primary">Craftsmanship</a>
             <a href="#details" className="hover:text-primary">Product Details</a>
@@ -191,11 +208,14 @@ function LakshmiPendantPage() {
               Shrivatsa Gold Lakshmi Pendant
             </h1>
             <p className="mt-4 max-w-md font-display text-xl italic text-foreground/80">
-              A timeless Lakshmi-inspired design crafted in 22K yellow gold.
+              A traditional Lakshmi pendant crafted in 22 karat yellow gold.
             </p>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              This Lakshmi pendant carries a sacred, traditional presence — divine
-              symbolism shaped in gold for bridal wear and auspicious occasions.
+              This Goddess Lakshmi pendant from Indriya is divine jewellery in the
+              truest sense — Lakshmi jewellery shaped in 22K gold for bridal
+              jewellery moments, puja and festive occasions. A Lakshmi necklace
+              pendant rooted in temple jewellery designs and traditional jewellery
+              craft, made for women who wear faith close to the heart.
             </p>
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-border py-5 sm:flex sm:flex-wrap sm:gap-x-10">
@@ -266,12 +286,32 @@ function LakshmiPendantPage() {
           <div aria-hidden="true" className="rule-gold mx-auto mt-6 h-px w-24" />
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
             Rooted in divine symbolism, this Goddess Lakshmi pendant reflects grace and
-            prosperity through a deeply traditional design language.
+            prosperity through a deeply traditional design language. Lakshmi is
+            invoked at every threshold of Indian life, and a traditional Lakshmi
+            pendant carries that blessing quietly through the day.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             It belongs to a lineage of temple jewellery designs — devotional motifs worn
-            close to the heart, carried through generations of Indian tradition.
+            close to the heart, carried through generations of Indian tradition. The
+            same lotus, arch and goddess forms that shape temple stone shape this
+            piece of Lakshmi jewellery, which is why a Lakshmi pendant for women
+            feels at home with both ceremony and everyday devotion.
           </p>
+          <figure className="mt-10">
+            <img
+              src={templeImage}
+              alt="Carved South Indian temple pillar with a lotus-seated goddess relief, the traditional temple jewellery design language behind the Lakshmi pendant"
+              width={1000}
+              height={667}
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 768px) 90vw, 720px"
+              className="h-auto w-full rounded-[1.5rem] border border-gold/40 object-contain"
+            />
+            <figcaption className="mt-3 text-xs uppercase tracking-[0.22em] text-maroon">
+              Temple jewellery designs — the tradition behind the motif
+            </figcaption>
+          </figure>
         </section>
 
         {/* CRAFTSMANSHIP */}
@@ -286,6 +326,12 @@ function LakshmiPendantPage() {
                 Crafted in 22 karat gold with a high-polish finish, the pendant's intricate
                 detailing is enhanced with subtle synthetic stone accents that add richness
                 and depth.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                The detailing follows the vocabulary of temple jewellery designs — measured
+                symmetry, devotional motifs and the warm glow of high-purity gold. It is
+                traditional jewellery in spirit and finish, an heirloom-minded Lakshmi
+                pendant rather than a passing trend.
               </p>
               <ul className="mt-7 space-y-3 text-sm text-foreground/85">
                 {[
@@ -333,7 +379,10 @@ function LakshmiPendantPage() {
               Crafted in 22K Yellow Gold
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              The Shrivatsa Gold Lakshmi Pendant is crafted in 22KT yellow gold.
+              The Shrivatsa Gold Lakshmi Pendant is crafted in 22KT yellow gold. Gold purity
+              of 22 karat is the purity long favoured for Indian traditional jewellery,
+              giving this Lakshmi pendant its deep, warm yellow tone and a stated gold
+              weight of 14.511 g.
             </p>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
@@ -366,7 +415,9 @@ function LakshmiPendantPage() {
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
               A piece of bridal jewellery with a devotional heart — equally at home as
-              jewellery for puja and festivals.
+              jewellery for puja and festivals. As Lakshmi jewellery for a wedding it sits
+              beautifully within layered bridal sets, and as everyday divine jewellery it
+              marks Diwali, Varalakshmi Vratam and family ceremonies with quiet grace.
             </p>
             <ul className="mt-8 flex flex-wrap justify-center gap-3">
               {occasions.map((o) => (
@@ -378,6 +429,21 @@ function LakshmiPendantPage() {
                 </li>
               ))}
             </ul>
+            <figure className="mx-auto mt-10 max-w-2xl">
+              <img
+                src={pujaImage}
+                alt="Brass diyas, marigold and jasmine flowers beside a gold-bordered silk saree, the puja and festive setting for traditional Lakshmi jewellery"
+                width={1000}
+                height={667}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 640px"
+                className="h-auto w-full rounded-[1.5rem] border border-gold/40 object-contain"
+              />
+              <figcaption className="mt-3 text-xs uppercase tracking-[0.22em] text-maroon">
+                Jewellery for puja and festivals
+              </figcaption>
+            </figure>
             <p className="mt-8 text-sm text-muted-foreground">
               <Link
                 to="/bridal-jewellery"
@@ -407,6 +473,11 @@ function LakshmiPendantPage() {
             <div>
               <SectionLabel>Styling</SectionLabel>
               <h2 className="font-display text-3xl text-primary sm:text-4xl">Style It Your Way</h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Worn on a fine chain as a Lakshmi necklace pendant, or layered within
+                traditional Indian jewellery, this Lakshmi pendant for women settles
+                naturally against silk, cotton and handloom drapes.
+              </p>
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
                 {styling.map((s) => (
                   <article
