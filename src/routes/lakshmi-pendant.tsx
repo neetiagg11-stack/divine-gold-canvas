@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/lakshmi-pendant-hero-optimized.webp.asset.json";
 import detailAsset from "@/assets/lakshmi-pendant-detail-optimized.webp.asset.json";
 import stylingAsset from "@/assets/lakshmi-pendant-styling-optimized.webp.asset.json";
+import logoAsset from "@/assets/indriya-logo.webp.asset.json";
+import pujaAsset from "@/assets/puja-ambience.webp.asset.json";
+import templeAsset from "@/assets/temple-motif.webp.asset.json";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/lakshmi-pendant`;
