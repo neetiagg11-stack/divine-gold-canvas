@@ -327,6 +327,12 @@ function LakshmiPendantPage() {
                 detailing is enhanced with subtle synthetic stone accents that add richness
                 and depth.
               </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                The detailing follows the vocabulary of temple jewellery designs — measured
+                symmetry, devotional motifs and the warm glow of high-purity gold. It is
+                traditional jewellery in spirit and finish, an heirloom-minded Lakshmi
+                pendant rather than a passing trend.
+              </p>
               <ul className="mt-7 space-y-3 text-sm text-foreground/85">
                 {[
                   "22KT yellow gold",
@@ -373,7 +379,10 @@ function LakshmiPendantPage() {
               Crafted in 22K Yellow Gold
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              The Shrivatsa Gold Lakshmi Pendant is crafted in 22KT yellow gold.
+              The Shrivatsa Gold Lakshmi Pendant is crafted in 22KT yellow gold. Gold purity
+              of 22 karat is the purity long favoured for Indian traditional jewellery,
+              giving this Lakshmi pendant its deep, warm yellow tone and a stated gold
+              weight of 14.511 g.
             </p>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
@@ -406,7 +415,9 @@ function LakshmiPendantPage() {
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
               A piece of bridal jewellery with a devotional heart — equally at home as
-              jewellery for puja and festivals.
+              jewellery for puja and festivals. As Lakshmi jewellery for a wedding it sits
+              beautifully within layered bridal sets, and as everyday divine jewellery it
+              marks Diwali, Varalakshmi Vratam and family ceremonies with quiet grace.
             </p>
             <ul className="mt-8 flex flex-wrap justify-center gap-3">
               {occasions.map((o) => (
@@ -418,6 +429,21 @@ function LakshmiPendantPage() {
                 </li>
               ))}
             </ul>
+            <figure className="mx-auto mt-10 max-w-2xl">
+              <img
+                src={pujaImage}
+                alt="Brass diyas, marigold and jasmine flowers beside a gold-bordered silk saree, the puja and festive setting for traditional Lakshmi jewellery"
+                width={1000}
+                height={667}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 768px) 90vw, 640px"
+                className="h-auto w-full rounded-[1.5rem] border border-gold/40 object-contain"
+              />
+              <figcaption className="mt-3 text-xs uppercase tracking-[0.22em] text-maroon">
+                Jewellery for puja and festivals
+              </figcaption>
+            </figure>
             <p className="mt-8 text-sm text-muted-foreground">
               <Link
                 to="/bridal-jewellery"
@@ -447,6 +473,11 @@ function LakshmiPendantPage() {
             <div>
               <SectionLabel>Styling</SectionLabel>
               <h2 className="font-display text-3xl text-primary sm:text-4xl">Style It Your Way</h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Worn on a fine chain as a Lakshmi necklace pendant, or layered within
+                traditional Indian jewellery, this Lakshmi pendant for women settles
+                naturally against silk, cotton and handloom drapes.
+              </p>
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
                 {styling.map((s) => (
                   <article
