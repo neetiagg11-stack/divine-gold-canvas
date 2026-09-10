@@ -250,7 +250,7 @@ function LakshmiPendantPage() {
             <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/60 bg-secondary p-3 shadow-luxe">
               <img
                 src={heroImage}
-                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
+                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold"
                 width={758}
                 height={1023}
                 loading="eager"
@@ -366,7 +366,7 @@ function LakshmiPendantPage() {
             <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={detailImage}
-                alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
+                alt="Close-up of the Shrivatsa Gold Lakshmi Pendant showing intricate traditional detailing"
                 width={1374}
                 height={1145}
                 loading="lazy"
@@ -468,7 +468,7 @@ function LakshmiPendantPage() {
             <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={stylingImage}
-                alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
+                alt="Woman wearing the Shrivatsa Gold Lakshmi Pendant in a traditional bridal look"
                 width={758}
                 height={1023}
                 loading="lazy"
@@ -481,9 +481,10 @@ function LakshmiPendantPage() {
               <SectionLabel>Styling</SectionLabel>
               <h2 className="font-display text-3xl text-primary sm:text-4xl">Style It Your Way</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Worn on a fine chain as a Lakshmi necklace pendant, or layered within
-                traditional Indian jewellery, this Lakshmi pendant for women settles
-                naturally against silk, cotton and handloom drapes.
+                Styled as a statement Lakshmi pendant, or layered within traditional
+                Indian jewellery, this Lakshmi pendant for women brings a traditional
+                touch to bridal and festive looks against silk, cotton and handloom
+                drapes.
               </p>
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
                 {styling.map((s) => (
