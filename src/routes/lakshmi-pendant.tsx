@@ -167,8 +167,10 @@ function Btn({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-maroon">
+    <p className="mb-4 flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-maroon">
+      <span aria-hidden="true" className="h-px w-8 bg-maroon/45" />
       {children}
+      <span aria-hidden="true" className="h-px w-8 bg-gold" />
     </p>
   );
 }
