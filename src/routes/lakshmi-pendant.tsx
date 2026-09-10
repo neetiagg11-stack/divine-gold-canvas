@@ -15,7 +15,7 @@ const logoImage = logoAsset.url;
 const pujaImage = pujaAsset.url;
 const templeImage = templeAsset.url;
 
-const TITLE = "Lakshmi Pendant | Traditional 22K Gold Jewellery";
+const TITLE = "Shrivatsa Gold Lakshmi Pendant | Indriya";
 const DESCRIPTION =
   "Discover the Shrivatsa Gold Lakshmi Pendant, a traditional 22K gold design inspired by divine symbolism and crafted for meaningful occasions.";
 
@@ -45,9 +45,11 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@type": "Product",
           name: "Shrivatsa Gold Lakshmi Pendant",
           category: "Pendants",
+          sku: "JTYYA20-DIPA967",
+          productID: "JTYYA20-DIPA967",
           url: PAGE_URL,
           image: [`${SITE}${heroImage}`, `${SITE}${detailImage}`, `${SITE}${stylingImage}`],
-          brand: { "@type": "Brand", name: "Indriya Jewellery" },
+          brand: { "@type": "Brand", name: "Indriya" },
           material: "22K Yellow Gold",
           audience: { "@type": "PeopleAudience", suggestedGender: "female" },
           description:
@@ -68,7 +70,12 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-            { "@type": "ListItem", position: 2, name: "Pendants", item: PAGE_URL },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Pendants",
+              item: `${SITE}/traditional-jewellery`,
+            },
             {
               "@type": "ListItem",
               position: 3,
@@ -160,8 +167,10 @@ function Btn({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-maroon">
+    <p className="mb-4 inline-flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-[0.32em] text-maroon">
+      <span aria-hidden="true" className="h-px w-8 bg-maroon/45" />
       {children}
+      <span aria-hidden="true" className="h-px w-8 bg-gold" />
     </p>
   );
 }
@@ -169,27 +178,29 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function LakshmiPendantPage() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-gold/45">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-          <a href="/" className="flex items-center gap-3">
+      <header className="border-b-2 border-maroon/25 bg-secondary/40">
+        <div aria-hidden="true" className="rule-gold h-px w-full" />
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5">
+          <a href="/" className="flex min-w-0 items-center gap-3">
             <img
               src={logoImage}
-              alt="Indriya Jewellery logo — lotus and temple-arch brand mark in gold and maroon"
+              alt="Indriya Jewellery official logo"
               width={420}
               height={210}
               loading="eager"
               decoding="async"
-              className="h-11 w-auto sm:h-14"
+              className="h-12 w-auto shrink-0 sm:h-16"
             />
             <span className="sr-only">Indriya Jewellery</span>
           </a>
           <nav aria-label="Page sections" className="hidden gap-8 text-xs uppercase tracking-[0.2em] text-muted-foreground sm:flex">
-            <a href="#craftsmanship" className="hover:text-primary">Craftsmanship</a>
-            <a href="#details" className="hover:text-primary">Product Details</a>
-            <a href="#trust" className="hover:text-primary">Connect</a>
+            <a href="#craftsmanship" className="transition-colors hover:text-maroon">Craftsmanship</a>
+            <a href="#details" className="transition-colors hover:text-maroon">Product Details</a>
+            <a href="#trust" className="transition-colors hover:text-maroon">Connect</a>
           </nav>
         </div>
       </header>
+
 
       <main>
         {/* HERO */}
@@ -210,10 +221,10 @@ function LakshmiPendantPage() {
             <p className="mt-4 max-w-md font-display text-xl italic text-foreground/80">
               A traditional Lakshmi pendant crafted in 22 karat yellow gold.
             </p>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-md border-l-2 border-maroon/35 pl-4 text-sm leading-relaxed text-muted-foreground">
               This Goddess Lakshmi pendant from Indriya is divine jewellery in the
-              truest sense — Lakshmi jewellery shaped in 22K gold for bridal
-              jewellery moments, puja and festive occasions. A Lakshmi necklace
+              truest sense — Lakshmi jewellery shaped in 22 karat gold for bridal
+              jewellery moments, puja and festive occasions. A traditional Lakshmi
               pendant rooted in temple jewellery designs and traditional jewellery
               craft, made for women who wear faith close to the heart.
             </p>
@@ -243,7 +254,7 @@ function LakshmiPendantPage() {
             <div className="mx-auto flex aspect-square w-full max-w-md items-center justify-center rounded-[2rem] border border-gold/60 bg-secondary p-3 shadow-luxe">
               <img
                 src={heroImage}
-                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold with kundan stones, elephant motifs and pearl drops"
+                alt="Shrivatsa Gold Lakshmi Pendant in 22K yellow gold"
                 width={758}
                 height={1023}
                 loading="eager"
@@ -262,7 +273,7 @@ function LakshmiPendantPage() {
             {highlights.map((h) => (
               <article
                 key={h.title}
-                className="flex h-full flex-col rounded-2xl border border-gold/45 bg-card p-6 text-center"
+                className="flex h-full flex-col rounded-2xl border border-gold/45 border-t-2 border-t-maroon/40 bg-card p-6 text-center"
               >
                 <span
                   aria-hidden="true"
@@ -359,7 +370,7 @@ function LakshmiPendantPage() {
             <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={detailImage}
-                alt="Close-up of the Lakshmi-inspired detailing, kundan stones and elephant motifs on the Shrivatsa Gold Pendant"
+                alt="Close-up of the Shrivatsa Gold Lakshmi Pendant showing intricate traditional detailing"
                 width={1374}
                 height={1145}
                 loading="lazy"
@@ -423,7 +434,7 @@ function LakshmiPendantPage() {
               {occasions.map((o) => (
                 <li
                   key={o}
-                  className="rounded-full border border-gold/50 bg-card px-6 py-2.5 text-sm text-foreground/85"
+                  className="rounded-full border border-gold/50 bg-card px-6 py-2.5 text-sm text-foreground/85 transition-colors hover:border-maroon/50 hover:text-maroon"
                 >
                   {o}
                 </li>
@@ -461,7 +472,7 @@ function LakshmiPendantPage() {
             <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-gold/60 bg-card p-3 shadow-luxe">
               <img
                 src={stylingImage}
-                alt="Woman in a cream saree wearing the Shrivatsa Gold Lakshmi Pendant on a fine gold chain"
+                alt="Woman wearing the Shrivatsa Gold Lakshmi Pendant in a traditional bridal look"
                 width={758}
                 height={1023}
                 loading="lazy"
@@ -474,15 +485,16 @@ function LakshmiPendantPage() {
               <SectionLabel>Styling</SectionLabel>
               <h2 className="font-display text-3xl text-primary sm:text-4xl">Style It Your Way</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Worn on a fine chain as a Lakshmi necklace pendant, or layered within
-                traditional Indian jewellery, this Lakshmi pendant for women settles
-                naturally against silk, cotton and handloom drapes.
+                Styled as a statement Lakshmi pendant, or layered within traditional
+                Indian jewellery, this Lakshmi pendant for women brings a traditional
+                touch to bridal and festive looks against silk, cotton and handloom
+                drapes.
               </p>
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
                 {styling.map((s) => (
                   <article
                     key={s.title}
-                    className="flex h-full flex-col rounded-2xl border border-maroon/15 bg-card p-5"
+                    className="flex h-full flex-col rounded-2xl border border-maroon/25 bg-card p-5"
                   >
                     <h3 className="font-display text-lg text-primary">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
@@ -535,7 +547,7 @@ function LakshmiPendantPage() {
             nothing more, nothing less.
           </p>
 
-          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 bg-card px-6 py-7 shadow-luxe">
+          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 border-b-2 border-b-maroon/40 bg-card px-6 py-7 shadow-luxe">
             <span className="text-gold-gradient font-display text-5xl font-semibold">22K</span>
             <p className="mt-3 text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
               Yellow Gold Purity
@@ -558,7 +570,7 @@ function LakshmiPendantPage() {
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="min-w-0 rounded-2xl border border-maroon/15 bg-card px-5 py-4"
+                className="min-w-0 rounded-2xl border border-maroon/25 bg-card px-5 py-4"
               >
                 <dt className="text-[0.66rem] uppercase tracking-[0.22em] text-muted-foreground">
                   {label}
