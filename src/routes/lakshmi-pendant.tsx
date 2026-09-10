@@ -273,7 +273,7 @@ function LakshmiPendantPage() {
             {highlights.map((h) => (
               <article
                 key={h.title}
-                className="flex h-full flex-col rounded-2xl border border-gold/45 bg-card p-6 text-center"
+                className="flex h-full flex-col rounded-2xl border border-gold/45 border-t-2 border-t-maroon/40 bg-card p-6 text-center"
               >
                 <span
                   aria-hidden="true"
@@ -434,7 +434,7 @@ function LakshmiPendantPage() {
               {occasions.map((o) => (
                 <li
                   key={o}
-                  className="rounded-full border border-gold/50 bg-card px-6 py-2.5 text-sm text-foreground/85"
+                  className="rounded-full border border-gold/50 bg-card px-6 py-2.5 text-sm text-foreground/85 transition-colors hover:border-maroon/50 hover:text-maroon"
                 >
                   {o}
                 </li>
@@ -494,7 +494,7 @@ function LakshmiPendantPage() {
                 {styling.map((s) => (
                   <article
                     key={s.title}
-                    className="flex h-full flex-col rounded-2xl border border-maroon/15 bg-card p-5"
+                    className="flex h-full flex-col rounded-2xl border border-maroon/25 bg-card p-5"
                   >
                     <h3 className="font-display text-lg text-primary">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
@@ -547,7 +547,7 @@ function LakshmiPendantPage() {
             nothing more, nothing less.
           </p>
 
-          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 bg-card px-6 py-7 shadow-luxe">
+          <div className="mx-auto mt-9 max-w-md rounded-2xl border border-gold/50 border-b-2 border-b-maroon/40 bg-card px-6 py-7 shadow-luxe">
             <span className="text-gold-gradient font-display text-5xl font-semibold">22K</span>
             <p className="mt-3 text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
               Yellow Gold Purity
@@ -570,7 +570,7 @@ function LakshmiPendantPage() {
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="min-w-0 rounded-2xl border border-maroon/15 bg-card px-5 py-4"
+                className="min-w-0 rounded-2xl border border-maroon/25 bg-card px-5 py-4"
               >
                 <dt className="text-[0.66rem] uppercase tracking-[0.22em] text-muted-foreground">
                   {label}
