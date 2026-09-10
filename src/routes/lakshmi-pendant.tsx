@@ -185,8 +185,8 @@ function LakshmiPendantPage() {
             <img
               src={logoImage}
               alt="Indriya Jewellery official logo"
-              width={420}
-              height={210}
+              width={248}
+              height={76}
               loading="eager"
               decoding="async"
               className="h-12 w-auto shrink-0 sm:h-16"
