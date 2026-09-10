@@ -15,7 +15,7 @@ const logoImage = logoAsset.url;
 const pujaImage = pujaAsset.url;
 const templeImage = templeAsset.url;
 
-const TITLE = "Lakshmi Pendant | Traditional 22K Gold Jewellery";
+const TITLE = "Shrivatsa Gold Lakshmi Pendant | Indriya";
 const DESCRIPTION =
   "Discover the Shrivatsa Gold Lakshmi Pendant, a traditional 22K gold design inspired by divine symbolism and crafted for meaningful occasions.";
 
@@ -45,9 +45,11 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@type": "Product",
           name: "Shrivatsa Gold Lakshmi Pendant",
           category: "Pendants",
+          sku: "JTYYA20-DIPA967",
+          productID: "JTYYA20-DIPA967",
           url: PAGE_URL,
           image: [`${SITE}${heroImage}`, `${SITE}${detailImage}`, `${SITE}${stylingImage}`],
-          brand: { "@type": "Brand", name: "Indriya Jewellery" },
+          brand: { "@type": "Brand", name: "Indriya" },
           material: "22K Yellow Gold",
           audience: { "@type": "PeopleAudience", suggestedGender: "female" },
           description:
@@ -68,7 +70,12 @@ export const Route = createFileRoute("/lakshmi-pendant")({
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-            { "@type": "ListItem", position: 2, name: "Pendants", item: PAGE_URL },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Pendants",
+              item: `${SITE}/traditional-jewellery`,
+            },
             {
               "@type": "ListItem",
               position: 3,
