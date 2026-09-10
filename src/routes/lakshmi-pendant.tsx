@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/lakshmi-pendant-hero-hq.webp.asset.json";
 import detailAsset from "@/assets/lakshmi-pendant-detail-hq.webp.asset.json";
 import stylingAsset from "@/assets/lakshmi-pendant-styling-hq.webp.asset.json";
-import logoAsset from "@/assets/indriya-logo.webp.asset.json";
+import logoAsset from "@/assets/indriya-logo-official.png.asset.json";
 import pujaAsset from "@/assets/puja-ambience.webp.asset.json";
 import templeAsset from "@/assets/temple-motif.webp.asset.json";
 
@@ -185,8 +185,8 @@ function LakshmiPendantPage() {
             <img
               src={logoImage}
               alt="Indriya Jewellery official logo"
-              width={420}
-              height={210}
+              width={248}
+              height={76}
               loading="eager"
               decoding="async"
               className="h-12 w-auto shrink-0 sm:h-16"
