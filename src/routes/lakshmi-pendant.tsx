@@ -178,27 +178,29 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function LakshmiPendantPage() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-gold/45">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-          <a href="/" className="flex items-center gap-3">
+      <header className="border-b-2 border-maroon/25 bg-secondary/40">
+        <div aria-hidden="true" className="rule-gold h-px w-full" />
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5">
+          <a href="/" className="flex min-w-0 items-center gap-3">
             <img
               src={logoImage}
-              alt="Indriya Jewellery logo — lotus and temple-arch brand mark in gold and maroon"
+              alt="Indriya Jewellery official logo"
               width={420}
               height={210}
               loading="eager"
               decoding="async"
-              className="h-11 w-auto sm:h-14"
+              className="h-12 w-auto shrink-0 sm:h-16"
             />
             <span className="sr-only">Indriya Jewellery</span>
           </a>
           <nav aria-label="Page sections" className="hidden gap-8 text-xs uppercase tracking-[0.2em] text-muted-foreground sm:flex">
-            <a href="#craftsmanship" className="hover:text-primary">Craftsmanship</a>
-            <a href="#details" className="hover:text-primary">Product Details</a>
-            <a href="#trust" className="hover:text-primary">Connect</a>
+            <a href="#craftsmanship" className="transition-colors hover:text-maroon">Craftsmanship</a>
+            <a href="#details" className="transition-colors hover:text-maroon">Product Details</a>
+            <a href="#trust" className="transition-colors hover:text-maroon">Connect</a>
           </nav>
         </div>
       </header>
+
 
       <main>
         {/* HERO */}
@@ -219,10 +221,10 @@ function LakshmiPendantPage() {
             <p className="mt-4 max-w-md font-display text-xl italic text-foreground/80">
               A traditional Lakshmi pendant crafted in 22 karat yellow gold.
             </p>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-md border-l-2 border-maroon/35 pl-4 text-sm leading-relaxed text-muted-foreground">
               This Goddess Lakshmi pendant from Indriya is divine jewellery in the
-              truest sense — Lakshmi jewellery shaped in 22K gold for bridal
-              jewellery moments, puja and festive occasions. A Lakshmi necklace
+              truest sense — Lakshmi jewellery shaped in 22 karat gold for bridal
+              jewellery moments, puja and festive occasions. A traditional Lakshmi
               pendant rooted in temple jewellery designs and traditional jewellery
               craft, made for women who wear faith close to the heart.
             </p>
