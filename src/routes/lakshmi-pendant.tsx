@@ -44,8 +44,8 @@ export const Route = createFileRoute("/lakshmi-pendant")({
         href: heroImageSm,
         as: "image",
         type: "image/webp",
-        imagesrcset: `${heroImageSm} 467w, ${heroImage} 933w`,
-        imagesizes: "(max-width: 768px) 88vw, 420px",
+        imageSrcSet: `${heroImageSm} 467w, ${heroImage} 933w`,
+        imageSizes: "(max-width: 768px) 88vw, 420px",
       },
     ],
     scripts: [
