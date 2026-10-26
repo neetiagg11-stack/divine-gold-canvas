@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/pendant-hero-2026.webp.asset.json";
 import heroSmAsset from "@/assets/pendant-hero-sm-2026.webp.asset.json";
@@ -22,6 +23,29 @@ const logoImage = logoAsset.url;
 const TITLE = "Shrivatsa Gold Lakshmi Pendant | Indriya";
 const DESCRIPTION =
   "Discover the Shrivatsa Gold Lakshmi Pendant, a traditional 22K gold design inspired by divine symbolism and crafted for meaningful occasions.";
+
+const faqs: { q: string; a: string }[] = [
+  {
+    q: "Is temple jewellery real gold?",
+    a: "Temple jewellery can be made from real gold, gold plated metals or other materials. Indriya's Shrivatsa Gold Lakshmi Pendant is crafted in 22K yellow gold, according to its official product specifications.",
+  },
+  {
+    q: "Why is temple jewellery so expensive?",
+    a: "Temple jewellery can be expensive because of the gold used, the intricacy of its designs and the craftsmanship involved. The final price depends on factors such as gold purity, weight, design details and any additional stones.",
+  },
+  {
+    q: "Is it good to wear a Lakshmi pendant?",
+    a: "A Lakshmi pendant is traditionally associated with Goddess Lakshmi, who symbolises wealth, prosperity and good fortune. It can be worn as an expression of faith and cultural tradition, as well as for its aesthetic appeal.",
+  },
+  {
+    q: "Which is better, 22K or 18K gold for jewellery?",
+    a: "22K gold contains a higher proportion of gold, making it popular for traditional Indian jewellery. 18K gold contains more alloy metals, which can make it suitable for certain intricate or everyday designs. The better choice depends on the design, durability and personal preference.",
+  },
+  {
+    q: "How should I style my jewellery with a saree?",
+    a: "Temple jewellery pairs beautifully with traditional sarees, especially silk sarees, for weddings and festive occasions. A Lakshmi pendant can be the focal point of your look, complemented by simple earrings or other jewellery that balances the overall outfit.",
+  },
+];
 
 export const Route = createFileRoute("/lakshmi-pendant")({
   head: () => ({
