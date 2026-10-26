@@ -227,6 +227,7 @@ function SectionLabel({ children, onDark = false }: { children: React.ReactNode;
 }
 
 function LakshmiPendantPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(1);
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
       <header className="border-b border-gold/50 bg-maroon">
@@ -590,6 +591,63 @@ function LakshmiPendantPage() {
                 </div>
               ))}
             </dl>
+          </div>
+        </section>
+
+        {/* FAQ (AEO) */}
+        <section id="faq" className="scroll-mt-16 border-t border-gold/40 bg-background">
+          <div className="mx-auto max-w-3xl px-5 py-16 md:py-20">
+            <div className="text-center">
+              <SectionLabel>FAQ</SectionLabel>
+              <h2 className="font-display text-3xl text-maroon sm:text-4xl">
+                Frequently Asked Questions About Lakshmi Pendants
+              </h2>
+              <div aria-hidden="true" className="rule-gold mx-auto mt-6 h-px w-24" />
+            </div>
+            <div className="mt-10 space-y-4">
+              {faqs.map((f, i) => {
+                const open = openFaq === i + 1;
+                return (
+                  <div
+                    key={f.q}
+                    className="rounded-2xl border border-gold/55 border-t-2 border-t-maroon/50 bg-card shadow-luxe"
+                  >
+                    <h3>
+                      <button
+                        type="button"
+                        id={`faq-q-${i + 1}`}
+                        aria-expanded={open}
+                        aria-controls={`faq-a-${i + 1}`}
+                        onClick={() => setOpenFaq(open ? null : i + 1)}
+                        className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-2xl px-6 py-5 text-left font-display text-lg text-maroon transition-colors hover:text-gold-deep sm:text-xl"
+                      >
+                        {f.q}
+                        <span
+                          aria-hidden="true"
+                          className={`shrink-0 text-gold-deep transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+                        >
+                          &#9662;
+                        </span>
+                      </button>
+                    </h3>
+                    <div
+                      id={`faq-a-${i + 1}`}
+                      role="region"
+                      aria-labelledby={`faq-q-${i + 1}`}
+                      className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                        open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="px-6 pb-5 text-sm leading-relaxed text-muted-foreground">
+                          {f.a}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
 
