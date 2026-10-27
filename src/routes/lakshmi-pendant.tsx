@@ -57,6 +57,7 @@ export const Route = createFileRoute("/lakshmi-pendant")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
+      { name: "author", content: editorialDetails.author },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
@@ -260,6 +261,10 @@ function LakshmiPendantPage() {
             <h1 className="font-display text-[2rem] leading-tight text-maroon sm:text-5xl lg:text-6xl">
               Shrivatsa Gold Lakshmi Pendant
             </h1>
+            <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+              By <Link to="/about" rel="author" className="text-maroon underline underline-offset-4">{editorialDetails.author}</Link> · Student jewellery information project.<br />
+              Last updated: <time dateTime={editorialDetails.lastUpdated}>{editorialDetails.lastUpdatedLabel}</time> · Scheduled publication: <time dateTime={editorialDetails.scheduledPublication}>{editorialDetails.scheduledPublicationLabel}</time>.
+            </p>
             <p className="mt-4 max-w-md font-display text-xl italic text-gold-deep">
               A traditional Lakshmi pendant crafted in 22 karat yellow gold.
             </p>
@@ -673,6 +678,15 @@ function LakshmiPendantPage() {
               The product details shared here are drawn from Indriya's official pendant
               specifications. Cultural context and styling suggestions are guidance,
               not additional product specifications.
+            </p>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              We are ATLAS students. Our contribution is source-based research and explanations of the pendant's specifications, devotional motifs and styling; we do not claim hands-on testing or professional jewellery credentials. This student guide is not the official Indriya store.
+            </p>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              Verify the details in <a href={officialSources.product} className="text-maroon underline underline-offset-4">Indriya's product listing</a> and read our <Link to="/about" hash="editorial-policy" className="text-maroon underline underline-offset-4">editorial policy and corrections approach</Link>. Purchase policies and benefits must be confirmed directly with the brand.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Website enquiries or corrections: <a href={`tel:${editorialDetails.contact}`} className="text-maroon underline underline-offset-4">{editorialDetails.contact}</a> (student project, not Indriya support). <Link to="/contact" className="text-maroon underline underline-offset-4">Official brand contact details</Link>.
             </p>
 
             <figure className="mx-auto mt-9 max-w-xl">

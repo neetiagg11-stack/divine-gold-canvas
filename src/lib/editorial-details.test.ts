@@ -11,6 +11,11 @@ test("stores the requested 28 October 2026 as scheduled, not a completed publica
   assert.equal(editorialDetails.scheduledPublication, "2026-10-28");
   assert.equal("datePublished" in pendantWebPage, false);
 });
+test("records a completed update before the scheduled publication", () => {
+  assert.equal(pendantWebPage.dateModified, "2026-10-27");
+  assert.ok(pendantWebPage.dateModified < editorialDetails.scheduledPublication);
+});
 test("uses the user-supplied project contact", () => {
   assert.equal(editorialDetails.contact, "8433624951");
+  assert.equal(studentAuthor.telephone, "8433624951");
 });
