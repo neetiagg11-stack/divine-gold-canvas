@@ -12,6 +12,7 @@ import { BrandLinks } from "@/components/brand-information";
 import { Button } from "@/components/ui/button";
 import { brandOrganization, officialSources, websiteSchema } from "@/lib/brand-sources";
 import { pendantSchema } from "@/lib/pendant-schema";
+import { editorialDetails, pendantWebPage } from "@/lib/editorial-details";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/lakshmi-pendant`;
@@ -77,6 +78,7 @@ export const Route = createFileRoute("/lakshmi-pendant")({
       },
     ],
     scripts: [
+      { type: "application/ld+json", children: JSON.stringify(pendantWebPage) },
       { type: "application/ld+json", children: JSON.stringify(brandOrganization) },
       { type: "application/ld+json", children: JSON.stringify(websiteSchema) },
       {
@@ -593,6 +595,10 @@ function LakshmiPendantPage() {
             </p>
             <p className="mt-3 text-xs text-muted-foreground">
               Official specifications checked <time dateTime="2026-10-27">27 October 2026</time>. <Link to="/about" className="text-maroon underline underline-offset-4">About our sources</Link>.
+            </p>
+            <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+              By <Link to="/about" className="text-maroon underline underline-offset-4">{editorialDetails.author}</Link> · {editorialDetails.role}.
+              Scheduled publication: <time dateTime={editorialDetails.scheduledPublication}>{editorialDetails.scheduledPublicationLabel}</time>.
             </p>
           </div>
         </section>
