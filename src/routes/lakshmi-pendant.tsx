@@ -364,7 +364,18 @@ function LakshmiPendantPage() {
             piece of Lakshmi jewellery, which is why a Lakshmi pendant for women
             feels at home with both ceremony and everyday devotion.
           </p>
+          <p className="mt-6 text-sm text-muted-foreground">
+            New to this craft? Read our{" "}
+            <Link
+              to="/temple-jewellery-guide"
+              className="text-gold-deep underline underline-offset-4 hover:text-maroon"
+            >
+              Temple Jewellery Guide
+            </Link>{" "}
+            — its meaning, designs and care.
+          </p>
           <figure className="mt-10">
+
             <img
               src={craftImage}
               alt="Detailed jewellery craftsmanship inspired by traditional Indian gold artistry"
