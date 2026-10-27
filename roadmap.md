@@ -1,4 +1,5 @@
 # SEO and AI discoverability
+- [x] Strengthen primary-source citations and add supplied X, Reddit and Instagram links with distinct profile/community labels; ten factual tests and browser checks pass. Full social-page retrieval and X official status remain unverified; no citation improvement is claimed.
 - [x] Address screenshot trust issues with visible attribution, truthful dates, student background, project contact and editorial transparency; verify rendered pages. Professional credentials and hands-on testing remain unclaimed because no evidence was supplied.
 - [x] Update llms.txt, student attribution, scheduled publication details and project contact; verify About navigation.
 - [ ] Confirm 10% discount eligibility and authority — awaiting verified offer terms; do not advertise an unconfirmed brand offer.

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BrandInformationPage } from "@/components/brand-information";
-import { brandOrganization, informationHead, officialSources, websiteSchema } from "@/lib/brand-sources";
+import { brandOrganization, informationHead, officialSources, suppliedReferences, websiteSchema } from "@/lib/brand-sources";
 import { editorialDetails, studentAuthor } from "@/lib/editorial-details";
 
 export const Route = createFileRoute("/about")({
@@ -36,6 +36,11 @@ function AboutPage() {
       <h2>Our sourcing approach</h2>
       <p>This site presents product information alongside cultural context, frequently asked questions and styling guidance. It does not claim personal product testing, professional credentials or verified customer ratings. References to the brand are not a claim that Indriya has authored or reviewed this guide.</p>
       <p>Official source pages were checked on <time dateTime="2026-10-27">27 October 2026</time>. For customer enquiries, visit <Link to="/contact">Contact</Link>.</p>
+      <h3 className="mt-6 font-display text-xl text-maroon">Related profiles & community discussion</h3>
+      <ul className="mt-4 list-disc space-y-3 pl-5">
+        {suppliedReferences.map((reference) => <li key={reference.name}><a href={reference.url}>{reference.name}</a> — {reference.kind}.</li>)}
+      </ul>
+      <p>These links were supplied for brand-related context. Instagram points to the same account linked by Indriya's official website. The X profile and Reddit post are not used as evidence of this pendant's specifications, price, ratings or an endorsement of this student project. Reddit is a third-party community discussion, not official brand guidance.</p>
     </section>
     <section id="editorial-policy">
       <h2>Editorial policy & corrections</h2>

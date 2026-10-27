@@ -14,6 +14,12 @@ export const officialSocials = [
   { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61560479585835" },
   { name: "YouTube", url: "https://www.youtube.com/@indriyajewels" },
 ];
+// User-supplied references are not proof of brand ownership or product endorsement.
+export const suppliedReferences = [
+  { name: "X", url: "https://x.com/indriyajewels?lang=en", kind: "Brand-related profile" },
+  { name: "Reddit", url: "https://www.reddit.com/r/GoldIndia/comments/1vrfwmp/found_a_design_i_really_like_at_indriya_by_aditya/", kind: "Community discussion" },
+  { name: "Instagram", url: "https://www.instagram.com/indriyajewels?dlrf=cTF1eXE0emdkOHhi", kind: "Indriya Instagram profile" },
+];
 export const brandOrganization = {
   "@context": "https://schema.org",
   "@type": "Organization",
