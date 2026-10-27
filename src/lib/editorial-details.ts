@@ -1,4 +1,4 @@
-import { SITE_URL } from "./brand-sources";
+import { officialSources, SITE_URL, suppliedReferences } from "./brand-sources";
 
 export const editorialDetails = {
   author: "ATLAS students",
@@ -29,4 +29,8 @@ export const pendantWebPage = {
   dateModified: editorialDetails.lastUpdated,
   isPartOf: { "@id": `${SITE_URL}/#website` },
   mainEntity: { "@type": "Product", name: "Shrivatsa Gold Lakshmi Pendant", sku: "JTYYA20-DIPA967" },
+  citation: [
+    { "@type": "WebPage", name: "Official Shrivatsa Gold Lakshmi Pendant specifications", url: officialSources.product },
+  ],
+  relatedLink: suppliedReferences.map((reference) => reference.url),
 };
