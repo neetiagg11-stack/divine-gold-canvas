@@ -27,7 +27,6 @@ export const pendantWebPage = {
   name: "Shrivatsa Gold Lakshmi Pendant | Indriya",
   author: studentAuthor,
   dateModified: editorialDetails.lastUpdated,
-  reviewedBy: undefined,
   isPartOf: { "@id": `${SITE_URL}/#website` },
   mainEntity: { "@type": "Product", name: "Shrivatsa Gold Lakshmi Pendant", sku: "JTYYA20-DIPA967" },
 };
