@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import templeAsset from "@/assets/temple-motif.webp.asset.json";
 import logoAsset from "@/assets/indriya-logo-official.png.asset.json";
+import { BrandLinks } from "@/components/brand-information";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/temple-jewellery-guide`;
@@ -38,7 +39,6 @@ export const Route = createFileRoute("/temple-jewellery-guide")({
           url: PAGE_URL,
           image: `${SITE}${templeImage}`,
           author: { "@type": "Person", name: "Jasnoor" },
-          publisher: { "@type": "Organization", name: "Indriya" },
           dateModified: "2026-10-26",
         }),
       },
@@ -302,6 +302,7 @@ function TempleJewelleryGuidePage() {
 
       <footer className="border-t border-gold/30 bg-maroon py-8 text-center text-xs uppercase tracking-[0.25em] text-ivory/60">
         Indriya &middot; Temple Jewellery Guide
+        <BrandLinks />
       </footer>
     </div>
   );

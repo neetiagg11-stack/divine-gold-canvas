@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { officialSources } from "@/lib/brand-sources";
+import { BrandLinks } from "@/components/brand-information";
+import { Button } from "@/components/ui/button";
 
 const SITE = "https://divine-gold-canvas.lovable.app";
 const PAGE_URL = `${SITE}/store-locator`;
@@ -55,9 +58,12 @@ function StoreLocatorPage() {
           <h2 className="font-display text-2xl text-primary">Get in Touch</h2>
           <div className="mt-6 rounded-2xl border border-gold/40 bg-card p-6 shadow-luxe">
             <p className="text-sm leading-relaxed text-muted-foreground">
-              For store locations, availability, and appointments, please connect with us directly. We will be happy to assist you.
+              For current store addresses, availability and visit information, use Indriya's official store locator. For product enquiries, Indriya publishes 1800-210-8383 on its official website.
             </p>
             <div className="mt-5">
+              <Button asChild className="mb-4 mr-3 h-12 rounded-full px-8">
+                <a href={officialSources.stores}>Find an Indriya Store</a>
+              </Button>
               <Link
                 to="/lakshmi-pendant"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-xs font-medium uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary/90"
@@ -71,6 +77,7 @@ function StoreLocatorPage() {
 
       <footer className="bg-primary/95 py-8 text-center text-xs uppercase tracking-[0.25em] text-primary-foreground/70">
         Indriya &middot; Store Locator
+        <BrandLinks />
       </footer>
     </div>
   );
