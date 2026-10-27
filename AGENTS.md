@@ -11,3 +11,4 @@
 
 - Maintain leaf-route metadata and static public crawler files so each public page is independently discoverable.
 - Keep verified external brand sources separate from this site's identity; referencing Indriya does not establish brand ownership or editorial review.
+- Centralize brand source URLs and product structured data in browser-safe library modules, with regression tests for unsupported offers/ratings and gold-weight semantics.

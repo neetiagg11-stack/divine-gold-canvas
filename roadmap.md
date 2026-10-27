@@ -1,6 +1,8 @@
 # SEO and AI discoverability
-- [ ] Verify official brand, product, contact and social sources.
-- [ ] Add sourced About/Contact pages and contextual links without redesigning the pendant.
-- [ ] Correct brand/site/product structured data and crawlability files.
-- [ ] Validate rendered pages, links, accessibility and mobile layout.
-- [ ] Report deployment and audit limitations and remaining evidence requirements.
+- [x] Verify official brand, product, contact and official-site-linked social sources.
+- [x] Add sourced About/Contact pages and contextual links without redesigning the pendant.
+- [x] Correct brand/site/product structured data and crawlability files.
+- [x] Validate rendered pages, links, FAQ accessibility and mobile layout.
+- [x] Report deployment and audit limitations and remaining evidence requirements.
+- [ ] Publish and verify new live pages and /llms.txt — requires explicit publication request.
+- [ ] Re-run ClayHog — requires access to an audit rerun or its results.
