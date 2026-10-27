@@ -1,0 +1,48 @@
+export const SITE_URL = "https://divine-gold-canvas.lovable.app";
+export const SITE_NAME = "Shrivatsa Pendant Guide";
+export const SOURCE_CHECKED = "2026-10-27";
+export const officialSources = {
+  home: "https://www.indriya.com/",
+  brand: "https://www.indriya.com/brand",
+  terms: "https://www.indriya.com/terms-and-conditions",
+  privacy: "https://www.indriya.com/privacy",
+  stores: "https://www.indriya.com/jewellery-stores",
+  product: "https://www.indriya.com/jewellery-products/shrivatsa-gold-lakshmi-pendant-jtyya20-dipa967",
+};
+export const officialSocials = [
+  { name: "Instagram", url: "https://www.instagram.com/indriyajewels/?hl=en" },
+  { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61560479585835" },
+  { name: "YouTube", url: "https://www.youtube.com/@indriyajewels" },
+];
+export const brandOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.indriya.com/#organization",
+  name: "Indriya",
+  url: officialSources.home,
+  sameAs: officialSocials.map((social) => social.url),
+};
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: SITE_NAME,
+  url: SITE_URL,
+  inLanguage: "en",
+  about: { "@id": brandOrganization["@id"] },
+};
+export function informationHead(path: string, title: string, description: string, type = "website") {
+  return {
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: type },
+      { property: "og:url", content: `${SITE_URL}${path}` },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: `${SITE_URL}${path}` }],
+  };
+}

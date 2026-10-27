@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as BridalJewelleryRouteImport } from './routes/bridal-jewellery'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as LakshmiPendantRouteImport } from './routes/lakshmi-pendant'
 import { Route as StoreLocatorRouteImport } from './routes/store-locator'
 import { Route as TempleJewelleryGuideRouteImport } from './routes/temple-jewellery-guide'
@@ -21,9 +23,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BridalJewelleryRoute = BridalJewelleryRouteImport.update({
   id: '/bridal-jewellery',
   path: '/bridal-jewellery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LakshmiPendantRoute = LakshmiPendantRouteImport.update({
@@ -49,7 +61,9 @@ const TraditionalJewelleryRoute = TraditionalJewelleryRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bridal-jewellery': typeof BridalJewelleryRoute
+  '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
@@ -57,7 +71,9 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bridal-jewellery': typeof BridalJewelleryRoute
+  '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
@@ -66,7 +82,9 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bridal-jewellery': typeof BridalJewelleryRoute
+  '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
@@ -76,7 +94,9 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/bridal-jewellery'
+    | '/contact'
     | '/lakshmi-pendant'
     | '/store-locator'
     | '/temple-jewellery-guide'
@@ -84,7 +104,9 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/bridal-jewellery'
+    | '/contact'
     | '/lakshmi-pendant'
     | '/store-locator'
     | '/temple-jewellery-guide'
@@ -92,7 +114,9 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/bridal-jewellery'
+    | '/contact'
     | '/lakshmi-pendant'
     | '/store-locator'
     | '/temple-jewellery-guide'
@@ -101,7 +125,9 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   BridalJewelleryRoute: typeof BridalJewelleryRoute
+  ContactRoute: typeof ContactRoute
   LakshmiPendantRoute: typeof LakshmiPendantRoute
   StoreLocatorRoute: typeof StoreLocatorRoute
   TempleJewelleryGuideRoute: typeof TempleJewelleryGuideRoute
@@ -117,11 +143,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bridal-jewellery': {
       id: '/bridal-jewellery'
       path: '/bridal-jewellery'
       fullPath: '/bridal-jewellery'
       preLoaderRoute: typeof BridalJewelleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/lakshmi-pendant': {
@@ -157,7 +197,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   BridalJewelleryRoute: BridalJewelleryRoute,
+  ContactRoute: ContactRoute,
   LakshmiPendantRoute: LakshmiPendantRoute,
   StoreLocatorRoute: StoreLocatorRoute,
   TempleJewelleryGuideRoute: TempleJewelleryGuideRoute,
