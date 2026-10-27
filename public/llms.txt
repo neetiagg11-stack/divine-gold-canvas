@@ -1,18 +1,21 @@
-# Shrivatsa Pendant Guide
+# Lovable Divine-gold-canvas
 
-> Product information and traditional jewellery guidance focused on Indriya's Shrivatsa Gold Lakshmi Pendant.
+> Site showcases the Shrivatsa Gold Lakshmi Pendant and related traditional jewellery information for customers seeking ceremonial pieces.
 
-Product specifications are presented separately from styling and cultural guidance. Consult the linked official Indriya sources for current product information, prices, availability and customer support. This site does not publish verified offers or customer ratings.
+This is a student information project by ATLAS students, not the official Indriya store. Product specifications are presented separately from styling and cultural guidance. Consult the linked official Indriya sources for current prices, availability and customer support. This site does not publish verified offers or customer ratings.
 
-## Pages
+## Main
 
-- [Shrivatsa Gold Lakshmi Pendant](/lakshmi-pendant): 22K yellow gold pendant specifications, styling and frequently asked questions.
-- [Temple Jewellery Guide](/temple-jewellery-guide): Meaning, traditional motifs and jewellery care guidance.
-- [Traditional Jewellery](/traditional-jewellery): Traditional jewellery context and the featured Lakshmi pendant.
-- [Bridal Jewellery](/bridal-jewellery): Bridal jewellery context and the featured Lakshmi pendant.
-- [About](/about): Brand context and the site's sourcing approach.
-- [Contact](/contact): Official Indriya customer support and store information.
-- [Store Locator](/store-locator): Access to official Indriya store information.
+- [Shrivatsa Gold Lakshmi Pendant | Indriya](https://divine-gold-canvas.lovable.app/lakshmi-pendant): Discover the traditional 22K yellow gold pendant, its specifications, styling and frequently asked questions.
+
+## More
+
+- [Store Locator | Indriya](https://divine-gold-canvas.lovable.app/store-locator): Access official Indriya store information.
+- [Traditional Jewellery | Indriya](https://divine-gold-canvas.lovable.app/traditional-jewellery): Traditional jewellery context and the featured Lakshmi pendant.
+- [Bridal Jewellery | Indriya](https://divine-gold-canvas.lovable.app/bridal-jewellery): Bridal jewellery context and the featured Lakshmi pendant.
+- [Temple Jewellery Guide: Meaning, Designs & Care](https://divine-gold-canvas.lovable.app/temple-jewellery-guide): Meaning, traditional motifs and practical jewellery care guidance.
+- [About](https://divine-gold-canvas.lovable.app/about): ATLAS students project authors and product sourcing.
+- [Contact](https://divine-gold-canvas.lovable.app/contact): Website project contact and separately identified official Indriya support sources.
 
 ## Optional
 
