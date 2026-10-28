@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as BridalJewelleryRouteImport } from './routes/bridal-jewellery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as LakshmiPendantRouteImport } from './routes/lakshmi-pendant'
+import { Route as PressRouteImport } from './routes/press'
 import { Route as StoreLocatorRouteImport } from './routes/store-locator'
 import { Route as TempleJewelleryGuideRouteImport } from './routes/temple-jewellery-guide'
 import { Route as TraditionalJewelleryRouteImport } from './routes/traditional-jewellery'
@@ -43,6 +44,11 @@ const LakshmiPendantRoute = LakshmiPendantRouteImport.update({
   path: '/lakshmi-pendant',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PressRoute = PressRouteImport.update({
+  id: '/press',
+  path: '/press',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StoreLocatorRoute = StoreLocatorRouteImport.update({
   id: '/store-locator',
   path: '/store-locator',
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/bridal-jewellery': typeof BridalJewelleryRoute
   '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
+  '/press': typeof PressRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
   '/traditional-jewellery': typeof TraditionalJewelleryRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/bridal-jewellery': typeof BridalJewelleryRoute
   '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
+  '/press': typeof PressRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
   '/traditional-jewellery': typeof TraditionalJewelleryRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/bridal-jewellery': typeof BridalJewelleryRoute
   '/contact': typeof ContactRoute
   '/lakshmi-pendant': typeof LakshmiPendantRoute
+  '/press': typeof PressRoute
   '/store-locator': typeof StoreLocatorRoute
   '/temple-jewellery-guide': typeof TempleJewelleryGuideRoute
   '/traditional-jewellery': typeof TraditionalJewelleryRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/bridal-jewellery'
     | '/contact'
     | '/lakshmi-pendant'
+    | '/press'
     | '/store-locator'
     | '/temple-jewellery-guide'
     | '/traditional-jewellery'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/bridal-jewellery'
     | '/contact'
     | '/lakshmi-pendant'
+    | '/press'
     | '/store-locator'
     | '/temple-jewellery-guide'
     | '/traditional-jewellery'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/bridal-jewellery'
     | '/contact'
     | '/lakshmi-pendant'
+    | '/press'
     | '/store-locator'
     | '/temple-jewellery-guide'
     | '/traditional-jewellery'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   BridalJewelleryRoute: typeof BridalJewelleryRoute
   ContactRoute: typeof ContactRoute
   LakshmiPendantRoute: typeof LakshmiPendantRoute
+  PressRoute: typeof PressRoute
   StoreLocatorRoute: typeof StoreLocatorRoute
   TempleJewelleryGuideRoute: typeof TempleJewelleryGuideRoute
   TraditionalJewelleryRoute: typeof TraditionalJewelleryRoute
@@ -171,6 +184,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LakshmiPendantRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/press': {
+      id: '/press'
+      path: '/press'
+      fullPath: '/press'
+      preLoaderRoute: typeof PressRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/store-locator': {
       id: '/store-locator'
       path: '/store-locator'
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   BridalJewelleryRoute: BridalJewelleryRoute,
   ContactRoute: ContactRoute,
   LakshmiPendantRoute: LakshmiPendantRoute,
+  PressRoute: PressRoute,
   StoreLocatorRoute: StoreLocatorRoute,
   TempleJewelleryGuideRoute: TempleJewelleryGuideRoute,
   TraditionalJewelleryRoute: TraditionalJewelleryRoute,
