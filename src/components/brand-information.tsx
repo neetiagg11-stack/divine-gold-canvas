@@ -8,6 +8,7 @@ export function BrandLinks() {
     <nav aria-label="Brand information" className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 px-5 text-xs tracking-normal text-ivory/90">
       <Link to="/about" className="underline underline-offset-4 hover:text-gold">About</Link>
       <Link to="/contact" className="underline underline-offset-4 hover:text-gold">Contact</Link>
+      <Link to="/press" className="underline underline-offset-4 hover:text-gold">Press & Media</Link>
       <a href={officialSources.home} className="underline underline-offset-4 hover:text-gold" aria-label="Official Indriya website">Indriya.com</a>
       <a href={officialSources.adityaBirla} className="underline underline-offset-4 hover:text-gold" aria-label="About Indriya on the Aditya Birla Group website">About Indriya</a>
       {officialSocials.filter((social) => social.name !== "Instagram").map((social) => (
@@ -42,7 +43,7 @@ export function BrandInformationPage({ title, children }: { title: string; child
         <p className="mb-4 text-xs uppercase text-gold-deep">Indriya · Product information</p>
         <h1 className="font-display text-4xl text-maroon sm:text-5xl">{title}</h1>
         <div aria-hidden="true" className="rule-gold mt-6 h-px w-24" />
-        <div className="mt-8 space-y-10 text-base leading-relaxed text-muted-foreground [&_a]:break-words [&_a]:text-maroon [&_a]:underline [&_a]:underline-offset-4 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:text-maroon [&_p]:mt-4">{children}</div>
+        <article className="mt-8 space-y-10 text-base leading-relaxed text-muted-foreground [&_a]:break-words [&_a]:text-maroon [&_a]:underline [&_a]:underline-offset-4 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:text-maroon [&_p]:mt-4">{children}</article>
       </main>
       <footer className="border-t border-gold/30 bg-maroon py-8 text-center text-xs text-ivory/75">
         Shrivatsa Pendant Guide
