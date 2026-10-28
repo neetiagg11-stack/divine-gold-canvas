@@ -605,6 +605,47 @@ function LakshmiPendantPage() {
               By <Link to="/about" className="text-maroon underline underline-offset-4">{editorialDetails.author}</Link> · {editorialDetails.role}.
               Scheduled publication: <time dateTime={editorialDetails.scheduledPublication}>{editorialDetails.scheduledPublicationLabel}</time>.
             </p>
+
+            <div className="mt-10 overflow-x-auto rounded-2xl border-2 border-gold/55 bg-card shadow-luxe">
+              <table className="w-full min-w-[22rem] border-collapse text-left text-sm">
+                <caption className="border-b-2 border-gold/55 bg-maroon px-6 py-4 text-left font-display text-lg text-ivory sm:text-xl">
+                  Indriya Shrivatsa Gold Lakshmi Pendant — Product Details
+                </caption>
+                <thead>
+                  <tr className="border-b border-gold/40 bg-secondary/60">
+                    <th scope="col" className="px-6 py-3 text-[0.68rem] font-medium uppercase tracking-[0.22em] text-maroon">Product Attribute</th>
+                    <th scope="col" className="px-6 py-3 text-[0.68rem] font-medium uppercase tracking-[0.22em] text-maroon">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Brand", "Indriya"],
+                    ["Product Name", "Shrivatsa Gold Lakshmi Pendant"],
+                    ["Product SKU", "JTYYA20-DIPA967"],
+                    ["Gold Purity", "22-karat yellow gold"],
+                    ["Gold Weight", "14.511 g"],
+                    ["Gross Weight", "15.945 g"],
+                    ["Jewellery Category", "Pendant"],
+                    ["Design Theme", "Elevated Traditional"],
+                    ["Occasion", "Bridal Wear"],
+                    ["Product Type", "Faith & Belief"],
+                  ].map(([attribute, value], i, rows) => (
+                    <tr key={attribute} className={i !== rows.length - 1 ? "border-b border-gold/25" : ""}>
+                      <th scope="row" className="px-6 py-3.5 align-top text-[0.7rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">{attribute}</th>
+                      <td className="px-6 py-3.5 text-foreground/90">{value}</td>
+                    </tr>
+                  ))}
+                  <tr className="border-t border-gold/25">
+                    <th scope="row" className="px-6 py-3.5 align-top text-[0.7rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">Official Product Page</th>
+                    <td className="px-6 py-3.5">
+                      <a href={officialSources.product} className="break-words text-maroon underline underline-offset-4 hover:text-gold-deep">
+                        Indriya's official Shrivatsa Gold Lakshmi Pendant listing
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 

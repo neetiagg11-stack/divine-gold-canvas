@@ -21,6 +21,12 @@ describe("Verified SEO facts", () => {
     assert.equal(goldWeight?.value, 14.511);
     assert.equal(goldWeight?.unitText, "g");
   });
+  test("records the stated 15.945 g gross weight as a named property", () => {
+    const schema = pendantSchema([]);
+    const grossWeight = schema.additionalProperty.find((property) => property.name === "Gross Weight");
+    assert.equal(grossWeight?.value, 15.945);
+    assert.equal(grossWeight?.unitText, "g");
+  });
   test("does not attribute this site's publication to the external brand", () => {
     assert.equal(websiteSchema.url, "https://divine-gold-canvas.lovable.app");
     assert.equal(brandOrganization.url, "https://www.indriya.com/");

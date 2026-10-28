@@ -17,6 +17,7 @@ export function pendantSchema(images: string[]) {
     description: "A 22K yellow gold Lakshmi pendant for women, with a stated gold weight of 14.511 g. Type: Faith & Belief. Occasion: Bridal Wear. Design theme: Elevated Traditional.",
     additionalProperty: [
       { "@type": "PropertyValue", name: "Gold Weight", value: 14.511, unitText: "g" },
+      { "@type": "PropertyValue", name: "Gross Weight", value: 15.945, unitText: "g" },
       { "@type": "PropertyValue", name: "Type", value: "Faith & Belief" },
       { "@type": "PropertyValue", name: "Occasion", value: "Bridal Wear" },
       { "@type": "PropertyValue", name: "Design Theme", value: "Elevated Traditional" },
