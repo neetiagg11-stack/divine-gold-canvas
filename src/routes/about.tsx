@@ -25,7 +25,7 @@ function AboutPage() {
     </section>
     <section>
       <h2>Indriya and its official website</h2>
-      <p>Indriya is a jewellery brand. Its official website is owned and operated by Novel Jewels Limited, an Aditya Birla Group entity, according to its <a href={officialSources.terms}>Terms & Conditions</a>. Explore the brand's own story on the <a href={officialSources.brand}>official Indriya brand page</a>.</p>
+      <p>Indriya is a jewellery brand. Its official website is owned and operated by Novel Jewels Limited, an Aditya Birla Group entity, according to its <a href={officialSources.terms}>Terms & Conditions</a>. Explore the brand's own story on the <a href={officialSources.brand}>official Indriya brand page</a> and its corporate profile on the <a href={officialSources.adityaBirla}>Aditya Birla Group website</a>.</p>
     </section>
     <section>
       <h2>Where the product information comes from</h2>

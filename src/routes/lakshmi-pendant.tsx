@@ -571,6 +571,14 @@ function LakshmiPendantPage() {
               <SectionLabel>Specifications</SectionLabel>
               <h2 className="font-display text-3xl text-maroon sm:text-4xl">Product Details</h2>
             </div>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              The Shrivatsa Gold Lakshmi Pendant (SKU JTYYA20-DIPA967) is a women's pendant by
+              the Indian jewellery brand Indriya, part of the Aditya Birla Group. According to
+              Indriya's official product listing, it is crafted in 22-karat yellow gold with a
+              gold weight of 14.511 g and a gross weight of 15.945 g. Its design theme is
+              Elevated Traditional, its product type is Faith &amp; Belief, and it is intended
+              for bridal wear. Price and availability are confirmed by Indriya directly.
+            </p>
             <dl className="mt-9 overflow-hidden rounded-2xl border-2 border-gold/55 bg-card">
               {details.map(([label, value], i) => (
                 <div
