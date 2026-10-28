@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/indriya-logo-official.png.asset.json";
-import { officialSocials, suppliedReferences } from "@/lib/brand-sources";
+import { corporateProfiles, officialSocials, officialSources, suppliedReferences } from "@/lib/brand-sources";
 import type { ReactNode } from "react";
 
 export function BrandLinks() {
@@ -8,8 +8,13 @@ export function BrandLinks() {
     <nav aria-label="Brand information" className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 px-5 text-xs tracking-normal text-ivory/90">
       <Link to="/about" className="underline underline-offset-4 hover:text-gold">About</Link>
       <Link to="/contact" className="underline underline-offset-4 hover:text-gold">Contact</Link>
+      <a href={officialSources.home} className="underline underline-offset-4 hover:text-gold" aria-label="Official Indriya website">Indriya.com</a>
+      <a href={officialSources.adityaBirla} className="underline underline-offset-4 hover:text-gold" aria-label="About Indriya on the Aditya Birla Group website">About Indriya</a>
       {officialSocials.filter((social) => social.name !== "Instagram").map((social) => (
         <a key={social.name} href={social.url} className="underline underline-offset-4 hover:text-gold" aria-label={`Indriya on ${social.name}`}>{social.name}</a>
+      ))}
+      {corporateProfiles.filter((profile) => profile.name === "LinkedIn").map((profile) => (
+        <a key={profile.name} href={profile.url} className="underline underline-offset-4 hover:text-gold" aria-label={profile.kind}>{profile.name}</a>
       ))}
       {suppliedReferences.map((reference) => (
         <a key={reference.name} href={reference.url} className="underline underline-offset-4 hover:text-gold" aria-label={`${reference.name}: ${reference.kind}`}>{reference.name === "Reddit" ? "Reddit discussion" : reference.name}</a>

@@ -36,7 +36,7 @@ export const brandOrganization = {
   name: "Indriya",
   url: officialSources.home,
   logo: { "@type": "ImageObject", url: LOGO_URL },
-  sameAs: officialSocials.map((social) => social.url),
+  sameAs: [...officialSocials.map((social) => social.url), ...corporateProfiles.map((profile) => profile.url)],
 };
 export const websiteSchema = {
   "@context": "https://schema.org",
