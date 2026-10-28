@@ -4,10 +4,13 @@ import { pendantSchema } from "./pendant-schema";
 import { brandOrganization, websiteSchema } from "./brand-sources";
 
 describe("Verified SEO facts", () => {
-  test("does not fabricate an offer or price", () => {
+  test("offer uses only the verified official-listing price", () => {
     const schema = pendantSchema([]);
-    assert.equal("offers" in schema, false);
-    assert.equal("price" in schema, false);
+    assert.equal(schema.offers.price, 239867);
+    assert.equal(schema.offers.priceCurrency, "INR");
+    assert.equal(schema.offers.url, "https://www.indriya.com/jewellery-products/shrivatsa-gold-lakshmi-pendant-jtyya20-dipa967");
+    assert.equal("availability" in schema.offers, false);
+    assert.equal("priceValidUntil" in schema.offers, false);
   });
   test("does not fabricate reviews or ratings", () => {
     const schema = pendantSchema([]);

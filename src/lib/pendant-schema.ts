@@ -23,5 +23,15 @@ export function pendantSchema(images: string[]) {
       { "@type": "PropertyValue", name: "Design Theme", value: "Elevated Traditional" },
       { "@type": "PropertyValue", name: "Gold Purity", value: "22K" },
     ],
+    // Verified on Indriya's official product listing (checked 28 October 2026):
+    // "₹2,39,867.00 — Approximate (excluding taxes)". Availability is not
+    // stated on the listing, so no availability claim is made here.
+    offers: {
+      "@type": "Offer",
+      url: officialSources.product,
+      priceCurrency: "INR",
+      price: 239867,
+      description: "Approximate price excluding taxes, as listed on Indriya's official product page.",
+    },
   };
 }

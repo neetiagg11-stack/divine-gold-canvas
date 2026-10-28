@@ -569,7 +569,9 @@ function LakshmiPendantPage() {
           <div className="mx-auto max-w-3xl px-5 py-16 md:py-20">
             <div className="text-center">
               <SectionLabel>Specifications</SectionLabel>
-              <h2 className="font-display text-3xl text-maroon sm:text-4xl">Product Details</h2>
+              <h2 className="font-display text-3xl text-maroon sm:text-4xl">
+                What Are the Specifications of the Shrivatsa Gold Lakshmi Pendant?
+              </h2>
             </div>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               The Shrivatsa Gold Lakshmi Pendant (SKU JTYYA20-DIPA967) is a women's pendant by
@@ -577,7 +579,8 @@ function LakshmiPendantPage() {
               Indriya's official product listing, it is crafted in 22-karat yellow gold with a
               gold weight of 14.511 g and a gross weight of 15.945 g. Its design theme is
               Elevated Traditional, its product type is Faith &amp; Belief, and it is intended
-              for bridal wear. Price and availability are confirmed by Indriya directly.
+              for bridal wear. Indriya's official listing shows an approximate price of
+              ₹2,39,867 (excluding taxes); availability is confirmed by Indriya directly.
             </p>
             <dl className="mt-9 overflow-hidden rounded-2xl border-2 border-gold/55 bg-card">
               {details.map(([label, value], i) => (
@@ -604,7 +607,7 @@ function LakshmiPendantPage() {
             </dl>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Source: <a href={officialSources.product} className="text-maroon underline underline-offset-4">Indriya's official Shrivatsa Gold Lakshmi Pendant listing</a> (JTYYA20-DIPA967).
-              Gold weight is 14.511 g; this is not the total weight of the piece. Price and availability should be confirmed with Indriya. Styling accessories are not confirmed as included.
+              Gold weight is 14.511 g; this is not the total weight of the piece. The ₹2,39,867 price is approximate and excludes taxes; final price and availability should be confirmed with Indriya. Styling accessories are not confirmed as included.
             </p>
             <p className="mt-3 text-xs text-muted-foreground">
               Official specifications checked <time dateTime="2026-10-27">27 October 2026</time>. <Link to="/about" className="text-maroon underline underline-offset-4">About our sources</Link>.
@@ -637,6 +640,7 @@ function LakshmiPendantPage() {
                     ["Design Theme", "Elevated Traditional"],
                     ["Occasion", "Bridal Wear"],
                     ["Product Type", "Faith & Belief"],
+                    ["Approximate Price", "₹2,39,867 (excluding taxes, per official listing)"],
                   ].map(([attribute, value], i, rows) => (
                     <tr key={attribute} className={i !== rows.length - 1 ? "border-b border-gold/25" : ""}>
                       <th scope="row" className="px-6 py-3.5 align-top text-[0.7rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">{attribute}</th>
