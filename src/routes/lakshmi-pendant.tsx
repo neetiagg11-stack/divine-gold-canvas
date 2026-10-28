@@ -31,24 +31,24 @@ const DESCRIPTION =
 
 const faqs: { q: string; a: string }[] = [
   {
-    q: "Is temple jewellery real gold?",
-    a: "Temple jewellery can be made from real gold, gold plated metals or other materials. Indriya's Shrivatsa Gold Lakshmi Pendant is crafted in 22K yellow gold, according to its official product specifications.",
+    q: "What makes the Indriya Shrivatsa Gold Lakshmi Pendant special?",
+    a: "The Indriya Shrivatsa Gold Lakshmi Pendant combines a devotional Goddess Lakshmi motif with 22K yellow gold and an Elevated Traditional design theme, according to Indriya's official product listing. It is categorised as Faith & Belief jewellery for bridal wear, with a stated gold weight of 14.511 g.",
   },
   {
-    q: "Why is temple jewellery so expensive?",
-    a: "Temple jewellery can be expensive because of the gold used, the intricacy of its designs and the craftsmanship involved. The final price depends on factors such as gold purity, weight, design details and any additional stones.",
+    q: "Is the Indriya Shrivatsa Gold Lakshmi Pendant made of 22K gold?",
+    a: "Yes. Indriya's official product listing states the pendant is crafted in 22K yellow gold with a gold weight of 14.511 g. Gold weight is not the same as the total weight of the piece, so confirm the full specifications with Indriya before purchasing.",
   },
   {
-    q: "Is it good to wear a Lakshmi pendant?",
-    a: "A Lakshmi pendant is traditionally associated with Goddess Lakshmi, who symbolises wealth, prosperity and good fortune. It can be worn as an expression of faith and cultural tradition, as well as for its aesthetic appeal.",
+    q: "How can I style an Indriya Lakshmi pendant with a saree?",
+    a: "A Lakshmi pendant pairs beautifully with traditional sarees, especially silk, for weddings and festive occasions. Let the pendant be the focal point of your look, complemented by simple earrings or jewellery that balances the overall outfit.",
   },
   {
-    q: "Which is better, 22K or 18K gold for jewellery?",
-    a: "22K gold contains a higher proportion of gold, making it popular for traditional Indian jewellery. 18K gold contains more alloy metals, which can make it suitable for certain intricate or everyday designs. The better choice depends on the design, durability and personal preference.",
+    q: "How should I care for my Indriya gold jewellery?",
+    a: "Store gold jewellery separately in a soft pouch to avoid scratches, keep it away from perfumes and household chemicals, and clean it gently with a soft cloth. For professional cleaning or inspection, visit an Indriya store.",
   },
   {
-    q: "How should I style my jewellery with a saree?",
-    a: "Temple jewellery pairs beautifully with traditional sarees, especially silk sarees, for weddings and festive occasions. A Lakshmi pendant can be the focal point of your look, complemented by simple earrings or other jewellery that balances the overall outfit.",
+    q: "What should I know before buying temple jewellery from Indriya?",
+    a: "Check the official product listing for the stated specifications, and confirm the current price, availability and exactly what is included directly with Indriya. Styling photographs do not establish which accessories, such as a chain, are included with the pendant.",
   },
 ];
 
