@@ -9,8 +9,15 @@ export const officialSources = {
   terms: "https://www.indriya.com/terms-and-conditions",
   privacy: "https://www.indriya.com/privacy",
   stores: "https://www.indriya.com/jewellery-stores",
+  storeSearch: "https://www.indriya.com/jewellery-stores/search",
   product: "https://www.indriya.com/jewellery-products/shrivatsa-gold-lakshmi-pendant-jtyya20-dipa967",
+  adityaBirla: "https://www.adityabirla.com/en/businesses/companies/indriya",
 };
+// Verified corporate profiles (checked 28 October 2026).
+export const corporateProfiles = [
+  { name: "Aditya Birla Group", url: "https://www.adityabirla.com/en/businesses/companies/indriya", kind: "Official Indriya page on the Aditya Birla Group website" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/company/novel-jewels-ltd/", kind: "Novel Jewels Limited (Aditya Birla Group) company page" },
+];
 export const officialSocials = [
   { name: "Instagram", url: "https://www.instagram.com/indriyajewels/?hl=en" },
   { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61560479585835" },
