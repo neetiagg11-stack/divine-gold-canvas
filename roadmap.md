@@ -1,5 +1,6 @@
 # SEO and AI discoverability
 - [x] E-E-A-T/GEO pass: Indriya-branded FAQs matching FAQPage schema, Organization logo URL, verified rendered page (canonical, schemas, logo, no page errors); ten factual tests pass. No E-E-A-T or ClayHog score improvement is claimed without a rerun audit.
+- [x] Add semantic product specification table (incl. gross weight 15.945 g) above the FAQ and mirror gross weight in Product JSON-LD; 11 tests and mobile/desktop checks pass. ClayHog 'offers' and LocalBusiness findings left unfixed: no verified price or business address exists, and fabricating either is not allowed.
 - [x] Strengthen primary-source citations and add supplied X, Reddit and Instagram links with distinct profile/community labels; ten factual tests and browser checks pass. Full social-page retrieval and X official status remain unverified; no citation improvement is claimed.
 - [x] Address screenshot trust issues with visible attribution, truthful dates, student background, project contact and editorial transparency; verify rendered pages. Professional credentials and hands-on testing remain unclaimed because no evidence was supplied.
 - [x] Update llms.txt, student attribution, scheduled publication details and project contact; verify About navigation.
