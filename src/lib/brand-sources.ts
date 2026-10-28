@@ -29,6 +29,7 @@ export const brandOrganization = {
   "@id": "https://www.indriya.com/#organization",
   name: "Indriya",
   url: officialSources.home,
+  logo: { "@type": "ImageObject", url: LOGO_URL },
   sameAs: officialSocials.map((social) => social.url),
 };
 export const websiteSchema = {
