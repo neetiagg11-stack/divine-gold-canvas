@@ -1,7 +1,6 @@
-import logoAsset from "@/assets/indriya-logo-official.png.asset.json";
-
 export const SITE_URL = "https://divine-gold-canvas.lovable.app";
-export const LOGO_URL = `${SITE_URL}${logoAsset.url}`;
+// Stable CDN URL of the official Indriya logo asset (src/assets/indriya-logo-official.png.asset.json).
+export const LOGO_URL = `${SITE_URL}/__l5e/assets-v1/abde71c7-70ed-4a90-b979-843dd18aaa10/indriya-logo-official.png`;
 export const SITE_NAME = "Shrivatsa Pendant Guide";
 export const SOURCE_CHECKED = "2026-10-27";
 export const officialSources = {
