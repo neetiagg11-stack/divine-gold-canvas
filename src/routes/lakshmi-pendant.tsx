@@ -336,15 +336,30 @@ function LakshmiPendantPage() {
           </div>
         </section>
 
+        {/* KEY TAKEAWAYS */}
+        <section aria-labelledby="key-takeaways" className="mx-auto max-w-3xl px-5 pt-16">
+          <div className="rounded-2xl border border-gold/60 border-l-4 border-l-maroon bg-card p-6 shadow-luxe sm:p-8">
+            <h2 id="key-takeaways" className="font-display text-2xl text-maroon">Key Takeaways</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+              <li>Product: Shrivatsa Gold Lakshmi Pendant by Indriya (SKU JTYYA20-DIPA967).</li>
+              <li>Metal: 22K yellow gold; gold weight 14.511 g, gross weight 15.945 g.</li>
+              <li>Category: Pendant for women; type Faith &amp; Belief; theme Elevated Traditional.</li>
+              <li>Occasion: listed for bridal wear; also suited to puja and festivals.</li>
+              <li>Source: specifications from Indriya's official product listing.</li>
+            </ul>
+          </div>
+        </section>
+
         {/* STORY */}
         <section className="mx-auto max-w-3xl px-5 py-16 text-center md:py-20">
           <SectionLabel>The Story</SectionLabel>
           <h2 className="font-display text-3xl text-maroon sm:text-4xl">
-            An Icon of Tradition and Grace
+            What Is the Shrivatsa Gold Lakshmi Pendant?
           </h2>
           <div aria-hidden="true" className="rule-gold mx-auto mt-6 h-px w-24" />
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Rooted in divine symbolism, this Goddess Lakshmi pendant reflects grace and
+            The Shrivatsa Gold Lakshmi Pendant is a 22K yellow gold Goddess Lakshmi pendant by
+            Indriya (SKU JTYYA20-DIPA967), with a stated gold weight of 14.511 g. Rooted in divine symbolism, this Goddess Lakshmi pendant reflects grace and
             prosperity through a deeply traditional design language. Lakshmi is
             invoked at every threshold of Indian life, and a traditional Lakshmi
             pendant carries that blessing quietly through the day.
@@ -390,9 +405,10 @@ function LakshmiPendantPage() {
             <div>
               <SectionLabel onDark>Craftsmanship</SectionLabel>
               <h2 className="font-display text-3xl text-ivory sm:text-4xl">
-                Where Tradition Meets Craftsmanship
+                How Is the Lakshmi Pendant Crafted?
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ivory/75">
+                It is crafted in 22 karat yellow gold with a high-polish finish and intricate detailing.
                 Crafted in 22 karat gold with a high-polish finish, the pendant's intricate
                 detailing is enhanced with subtle synthetic stone accents that add richness
                 and depth.
@@ -446,7 +462,7 @@ function LakshmiPendantPage() {
           <div className="text-center">
             <SectionLabel>Gold Purity</SectionLabel>
             <h2 className="font-display text-3xl text-maroon sm:text-4xl">
-              Crafted in 22K Yellow Gold
+              What Gold Purity Is the Lakshmi Pendant?
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
               The Shrivatsa Gold Lakshmi Pendant is crafted in 22KT yellow gold. Gold purity
@@ -481,9 +497,10 @@ function LakshmiPendantPage() {
           <div className="mx-auto max-w-4xl px-5 py-16 text-center md:py-20">
             <SectionLabel>Occasions</SectionLabel>
             <h2 className="font-display text-3xl text-maroon sm:text-4xl">
-              Made for Meaningful Occasions
+              When Can You Wear a Lakshmi Pendant?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
+              It is listed for bridal wear and also suits puja, festivals and family ceremonies.
               A piece of bridal jewellery with a devotional heart — equally at home as
               jewellery for puja and festivals. As Lakshmi jewellery for a wedding it sits
               beautifully within layered bridal sets, and as everyday divine jewellery it

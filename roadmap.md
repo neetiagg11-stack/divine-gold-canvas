@@ -14,3 +14,5 @@
 - [ ] Publish and verify new live pages and /llms.txt — requires explicit publication request.
 - [ ] Re-run ClayHog — requires access to an audit rerun or its results.- [x] Add /press page, footer Press link, semantic article wrapper.
 - [ ] InStock availability, LocalBusiness with placeholder geo/hours, placeholder GitHub/Crunchbase/Trustpilot/G2 links — declined: unverified/fabricated data.
+- [x] Question-style headings, direct answers, Key Takeaways on pendant page; guide headings as questions. FAQPage already wraps pendant Q&A.
+- [ ] GitHub/Crunchbase/TikTok/Product Hunt/Trustpilot/G2/Capterra footer + sameAs — awaiting real verified profile URLs.

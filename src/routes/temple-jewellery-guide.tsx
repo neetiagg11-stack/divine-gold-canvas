@@ -137,7 +137,7 @@ function TempleJewelleryGuidePage() {
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-20">
             <div>
               <SectionLabel onDark>Origins</SectionLabel>
-              <h2 className="font-display text-3xl text-ivory sm:text-4xl">Origins of Temple Jewellery</h2>
+              <h2 className="font-display text-3xl text-ivory sm:text-4xl">Where Does Temple Jewellery Come From?</h2>
               <p className="mt-5 text-base leading-relaxed text-ivory/75">
                 Temple jewellery has historical roots in South Indian temple traditions. Its designs
                 were associated with deities and classical dance, and over time, it became an
@@ -166,7 +166,7 @@ function TempleJewelleryGuidePage() {
         <section id="designs" className="scroll-mt-16 mx-auto max-w-6xl px-5 py-16 md:py-20">
           <div className="text-center">
             <SectionLabel>Designs</SectionLabel>
-            <h2 className="font-display text-3xl text-maroon sm:text-4xl">Common Temple Jewellery Designs</h2>
+            <h2 className="font-display text-3xl text-maroon sm:text-4xl">What Are Common Temple Jewellery Designs?</h2>
             <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
               Devotional motifs shape the most loved traditional designs — each carrying its own
               meaning, worn close to the heart.
@@ -222,7 +222,7 @@ function TempleJewelleryGuidePage() {
           <div className="mx-auto max-w-4xl px-5 py-16 md:py-20">
             <div className="text-center">
               <SectionLabel>Care</SectionLabel>
-              <h2 className="font-display text-3xl text-maroon sm:text-4xl">How to Care for Temple Jewellery</h2>
+              <h2 className="font-display text-3xl text-maroon sm:text-4xl">How Do You Care for Temple Jewellery?</h2>
             </div>
             <ul className="mt-10 grid gap-4 sm:grid-cols-2">
               {[
