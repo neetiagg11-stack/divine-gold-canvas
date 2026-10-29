@@ -12,4 +12,5 @@
 - [x] Validate rendered pages, links, FAQ accessibility and mobile layout.
 - [x] Report deployment and audit limitations and remaining evidence requirements.
 - [ ] Publish and verify new live pages and /llms.txt — requires explicit publication request.
-- [ ] Re-run ClayHog — requires access to an audit rerun or its results.
+- [ ] Re-run ClayHog — requires access to an audit rerun or its results.- [x] Add /press page, footer Press link, semantic article wrapper.
+- [ ] InStock availability, LocalBusiness with placeholder geo/hours, placeholder GitHub/Crunchbase/Trustpilot/G2 links — declined: unverified/fabricated data.
